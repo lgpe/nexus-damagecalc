@@ -42,6 +42,10 @@ var SETDEX_GSC = {
 		"UU Swords Dancer": {"level": 100, "item": "Leftovers", "moves": ["Swords Dance", "Sludge Bomb", "Hidden Power Ground", "Sleep Powder"]},
 		"OU Double Powder": {"level": 100, "item": "Leftovers", "moves": ["Sleep Powder", "Stun Spore", "Moonlight", "Razor Leaf"]},
 	},
+	"Bellsprout": {
+		"T11 Mixed Attacker": {"level": 100, "item": "Leftovers", "moves": ["Giga Drain", "Sludge Bomb", "Hidden Power Rock", "Sleep Powder"]},
+		"T11 Swords Dance": {"level": 100, "item": "Leftovers", "moves": ["Return", "Sludge Bomb", "Swords Dance", "Sleep Powder"]},
+	},	
 	"Blastoise": {
 		"UU Showdown Usage": {"level": 100, "item": "Leftovers", "moves": ["Surf", "Rest", "Rapid Spin", "Ice Beam"]},
 		"OU Bulky Water": {"level": 100, "item": "Leftovers", "moves": ["Surf", "Rest", "Reflect", "Rapid Spin"]},
@@ -65,6 +69,10 @@ var SETDEX_GSC = {
 	"Clefable": {
 		"OU Belly Drum": {"level": 100, "item": "Leftovers", "moves": ["Belly Drum", "Moonlight", "Return", "Fire Blast"]},
 		"OU Mixed Attacker": {"level": 100, "item": "Leftovers", "moves": ["Return", "Fire Blast", "Ice Beam", "Moonlight"]},
+	},
+	"Cleffa": {
+		"T11 Curse": {"level": 100, "item": "Leftovers", "moves": ["Return", "Curse", "Rest", "Sleep Talk"]},
+		"T11 Special": {"level": 100, "item": "Leftovers", "moves": ["Fire Blast", "Hidden Power Water", "Thunderbolt", "Encore"]},
 	},
 	"Cloyster": {
 		"OU Offensive": {"level": 100, "item": "Leftovers", "moves": ["Spikes", "Surf", "Toxic", "Explosion"]},
