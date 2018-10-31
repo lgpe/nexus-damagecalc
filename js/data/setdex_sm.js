@@ -912,7 +912,7 @@ var SETDEX_SM = {
 		"LC Defog": {"level": 5, "evs": {"sd": 112, "df": 232, "hp": 44, "sp": 72, "sa": 48}, "nature": "Bold", "ability": "Storm Drain", "item": "Berry Juice", "moves": ["Defog", "Scald", "U-turn", "Hidden Power Fighting"]},
 	},
 	"Flareon": {
-		"PU Wallbreaker": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Adamant", "ability": "Flash Fire", "item": "Choice Band", "moves": ["Flare Blitz", "Superpower", "Quick Attack", "Double-Edge"]},
+		"T15 Choice Band": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Guts", "item": "Choice Band", "moves": ["Flare Blitz", "Quick Attack", "Return", "Superpower"
 	},
 	"Fletchling": {
 		"LC Bulky Sweeper": {"level": 5, "evs": {"df": 92, "at": 196, "sp": 180}, "nature": "Adamant", "ability": "Gale Wings", "item": "Berry Juice", "moves": ["Acrobatics", "Swords Dance", "U-turn", "Substitute"]},
@@ -2594,7 +2594,7 @@ var SETDEX_SM = {
 		"NU Offensive": {"level": 100, "evs": {"df": 4, "sp": 252, "sa": 252}, "nature": "Timid", "ability": "RKS System", "item": "Fire Memory", "moves": ["Flamethrower", "Thunderbolt", "Surf", "Parting Shot"]},
 	},
 	"Silvally-Flying": {
-		"NU Swords Dance": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Jolly", "ability": "RKS System", "item": "Flying Memory", "moves": ["Swords Dance", "Multi-Attack", "Iron Head", "Fire Fang"]},
+		"T15 Offensive Pivot": {"level": 100, "evs": {"hp": 88, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 168}, "ivs": {"at": 31, "sp": 31}, "nature": "Timid", "ability": "RKS System", "item": "Flying Memory", "moves": ["Parting Shot", "Air Slash", "Flamethrower", "Defog"]},
 	},
 	"Silvally-Ghost": {
 		"PU Offensive pivot": {"level": 100, "evs": {"sd": 4, "sp": 252, "sa": 252}, "nature": "Timid", "ability": "RKS System", "item": "Ghost Memory", "moves": ["Parting Shot", "Shadow Ball", "Flamethrower", "Defog"]},
@@ -2790,7 +2790,8 @@ var SETDEX_SM = {
 		"LC Offensive Utility": {"level": 5, "evs": {"sd": 188, "df": 60, "at": 252, "sp": 4}, "nature": "Careful", "ability": "Aftermath", "item": "Eviolite", "moves": ["Pursuit", "Sucker Punch", "Defog", "Sludge Bomb"]},
 	},
 	"Sudowoodo": {
-		"PU Choice Band": {"level": 100, "evs": {"df": 4, "at": 252, "hp": 252}, "nature": "Adamant", "ability": "Rock Head", "item": "Choice Band", "moves": ["Head Smash", "Earthquake", "Sucker Punch", "Wood Hammer"]},
+		"T15 Choice Band": {"level": 100, "evs": {"hp": 132, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 124}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Rock Head", "item": "Choice Band", "moves": ["Head Smash", "Wood Hammer", "Sucker Punch", "Earthquake"]},
+		"T15 Assault Vest": {"level": 100, "evs": {"hp": 232/132, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 24/124}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Rock Head", "item": "Assault Vest", "moves": ["Head Smash", "Wood Hammer", "Sucker Punch", "Earthquake"]},
 	},
 	"Suicune": {
 		"UU Calm Mind + Protect": {"level": 100, "evs": {"sd": 40, "hp": 252, "sp": 216}, "nature": "Timid", "ability": "Pressure", "item": "Leftovers", "moves": ["Calm Mind", "Protect", "Scald", "Substitute"]},
