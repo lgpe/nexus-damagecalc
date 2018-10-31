@@ -1643,7 +1643,7 @@ var SETDEX_SM = {
 		"OU Swords Dance": {"level": 100, "evs": {"sd": 4, "at": 252, "sp": 252}, "nature": "Jolly", "ability": "Tough Claws", "item": "Lycanium Z", "moves": ["Swords Dance", "Stone Edge", "Drill Run", "Accelerock"]},
 	},
 	"Lycanroc-Midnight": {
-"7-15": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "No Guard", "item": "Lycanium Z", "moves": ["Swords Dance", "Stone Edge", "Stomping Tantrum", "Sucker Punch"]},
+		"T15 SD Lycanium": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "No Guard", "item": "Lycanium Z", "moves": ["Swords Dance", "Stone Edge", "Stomping Tantrum", "Sucker Punch"]},
 	},
 	"Machamp": {
 		"RU Guts Wallbreaker": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Adamant", "ability": "Guts", "item": "Flame Orb", "moves": ["Close Combat", "Knock Off", "Facade", "Bullet Punch"]},
