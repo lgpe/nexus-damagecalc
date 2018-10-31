@@ -1250,7 +1250,7 @@ var SETDEX_SM = {
 		"Battle Spot Singles Mega Wallbreaker": {"level": 50, "evs": {"at": 252, "hp": 20, "sp": 236}, "nature": "Adamant", "ability": "Guts", "item": "Heracronite", "moves": ["Pin Missile", "Rock Blast", "Bullet Seed", "Close Combat"]},
 	},
 	"Hippopotas": {
-		"LC Physical Wall": {"level": 5, "evs": {"sd": 180, "df": 132, "at": 20, "hp": 132, "sp": 20}, "nature": "Careful", "ability": "Sand Stream", "item": "Eviolite", "moves": ["Slack Off", "Stealth Rock", "Earthquake", "Whirlwind"]},
+	   "T15 Specially Defensive": {"level": 100, "evs": {"hp": 252, "at": 0, "df": 4, "sa": 0, "sd": 252, "sp": 0}, "ivs": {"at": 31, "sp": 31}, "nature": "Careful", "ability": "Sand Stream", "item": "Eviolite", "moves": ["Earthquake", "Whirlwind", "Stealth Rock", "Slack Off"]},
 	},
 	"Hippowdon": {
 		"UU Mixed Wall": {"level": 100, "evs": {"sd": 176, "df": 80, "hp": 252}, "nature": "Impish", "ability": "Sand Stream", "item": "Leftovers", "moves": ["Stealth Rock", "Earthquake", "Slack Off", "Toxic"]},
