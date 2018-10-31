@@ -1128,7 +1128,7 @@ var SETDEX_SM = {
 		"Uber Trapper": {"level": 100, "evs": {"sd": 252, "df": 4, "hp": 252}, "nature": "Calm", "ability": "Shadow Tag", "item": "Leftovers", "moves": ["Calm Mind", "Psyshock", "Rest", "Heal Bell"]},
 	},
 	"Gourgeist": {
-		"PU Z-Trick-or-Treat": {"level": 100, "evs": {"at": 252, "hp": 96, "sp": 160}, "nature": "Adamant", "ability": "Frisk", "item": "Ghostium Z", "moves": ["Trick-or-Treat", "Seed Bomb", "Phantom Force", "Shadow Sneak"]},
+ 		"T15 Physically Defensive": {"level": 100, "evs": {"hp": 252, "at": 0, "df": 252, "sa": 0, "sd": 4, "sp": 0}, "ivs": {"at": 31, "sp": 31}, "nature": "Impish", "ability": "Frisk", "item": "Leftovers", "moves": ["Seed Bomb", "Foul Play", "Will-O-Wisp", "Synthesis"]},
 	},
 	"Gourgeist-Large": {
 		"PU Defensive": {"level": 100, "evs": {"sd": 104, "df": 88, "hp": 252, "sp": 64}, "nature": "Impish", "ability": "Frisk", "item": "Leftovers", "moves": ["Seed Bomb", "Foul Play", "Will-O-Wisp", "Synthesis"]},
