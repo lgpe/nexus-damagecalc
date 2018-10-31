@@ -2261,7 +2261,7 @@ var SETDEX_SM = {
 		"UU Substitute + Calm Mind": {"level": 100, "evs": {"sd": 4, "sp": 252, "sa": 252}, "nature": "Timid", "ability": "Pressure", "item": "Leftovers", "moves": ["Substitute", "Calm Mind", "Thunderbolt", "Hidden Power Ice"]},
 	},
 	"Rampardos": {
-		"PU Mixed Wallbreaker": {"level": 100, "evs": {"at": 252, "sp": 252, "sa": 4}, "nature": "Naive", "ability": "Sheer Force", "item": "Life Orb", "moves": ["Rock Slide", "Zen Headbutt", "Fire Blast", "Superpower"]},
+ 		"T15 Choice Scarf": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 4, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Naive", "ability": "Sheer Force", "item": "Choice Scarf", "moves": ["Head Smash", "Rock Slide", "Ice Beam", "Earthquake"]},
 	},
 	"Rapidash": {
 		"PU Offensive Utility": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Jolly", "ability": "Flash Fire", "item": "Firium Z", "moves": ["Flare Blitz", "Wild Charge", "Morning Sun", "Will-O-Wisp"]},
