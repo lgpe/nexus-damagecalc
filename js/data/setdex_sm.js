@@ -2642,6 +2642,9 @@ var SETDEX_SM = {
 		"Monotype Defensive (Steel)": {"level": 100, "evs": {"sd": 32, "df": 252, "hp": 224}, "nature": "Impish", "ability": "Sturdy", "item": "Leftovers", "moves": ["Brave Bird", "Spikes", "Roost", "Whirlwind"]},
 		"Monotype Suicide Lead (Steel)": {"level": 100, "evs": {"at": 252, "sp": 252}, "ivs": {"sd": 0, "df": 0, "hp": 0}, "nature": "Hasty", "ability": "Sturdy", "item": "Salac Berry", "moves": ["Stealth Rock", "Spikes", "Taunt", "Brave Bird"]},
 	},
+	"Skitty": {
+ 		"T23 Physical Attacker": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 4, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Jolly", "ability": "Normalize", "item": "Life Orb", "moves": ["Fake Out", "Return", "Sucker Punch", "Toxic"]},
+	},
 	"Skrelp": {
 		"LC Special Attacker": {"level": 5, "evs": {"sd": 36, "df": 116, "hp": 116, "sp": 40, "sa": 200}, "nature": "Calm", "ability": "Adaptability", "item": "Eviolite", "moves": ["Sludge Wave", "Hydro Pump", "Hidden Power Fire", "Toxic Spikes"]},
 	},
