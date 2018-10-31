@@ -885,7 +885,7 @@ var SETDEX_SM = {
 		"PU Choice Band": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Jolly", "ability": "Sniper", "item": "Choice Band", "moves": ["Drill Peck", "Double-Edge", "Drill Run", "U-turn"]},
 	},
 	"Feebas": {
- 		"T23 Offensive": {"level": 100, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "ivs": {"at": 0, "sp": 31}, "nature": "Modest", "ability": "Adaptability", "item": "Life Orb", "moves": ["Surf", "Ice Bam", "Hidden Power Grass", "Hypnosis"]},
+ 		"T23 Offensive": {"level": 100, "evs": {"hp": 4, "at": 0, "df": 0, "sa": 252, "sd": 0, "sp": 252}, "ivs": {"at": 0, "sp": 31}, "nature": "Modest", "ability": "Adaptability", "item": "Life Orb", "moves": ["Surf", "Ice Beam", "Hidden Power Grass", "Hypnosis"]},
 },
 	"Feraligatr": {
 		"RU Dragon Dance": {"level": 100, "evs": {"df": 4, "at": 252, "sp": 252}, "nature": "Jolly", "ability": "Sheer Force", "item": "Life Orb", "moves": ["Dragon Dance", "Liquidation", "Ice Punch", "Crunch"]},
