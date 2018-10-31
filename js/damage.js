@@ -129,7 +129,7 @@ function getDamageResult(attacker, defender, move, field) {
 		isRefrigerate = attacker.ability === "Refrigerate" && move.type === "Normal";
 		isGalvanize = attacker.ability === "Galvanize" && move.type === "Normal";
 		isLiquidVoice = attacker.ability === "Liquid Voice" && move.isSound;
-		isNormalize = attacker.ability === "Normalize" && move.type !== "Normal";
+		isNormalize = attacker.ability === "Normalize";
 		if (isAerilate) {
 			move.type = "Flying";
 		} else if (isGalvanize) {
