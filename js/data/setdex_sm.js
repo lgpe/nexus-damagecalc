@@ -2173,7 +2173,7 @@ var SETDEX_SM = {
 		"LC Sunny Day": {"level": 5, "evs": {"df": 156, "sp": 196, "sa": 156}, "nature": "Timid", "ability": "Flame Body", "item": "Eviolite", "moves": ["Fire Blast", "Solar Beam", "Sunny Day", "Morning Sun"]},
 	},
 	"Poochyena": {
-	   "T23 Quick Feet Attacker": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Quick Feet", "item": "Toxic Orb", "moves": ["Facade", "Protect", "Play Rough", "Snatch"]},
+	   "T23 Quick Feet Attacker": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 4, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Quick Feet", "item": "Toxic Orb", "moves": ["Facade", "Play Rough", "Protect", "Snatch"]},
       "T23 Stallbreaker": {"level": 100, "evs": {"hp": 252, "at": 0, "df": 84, "sa": 0, "sd": 0, "sp": 172}, "ivs": {"at": 0, "sp": 31}, "nature": "Bold", "ability": "Quick Feet", "item": "Eviolite", "moves": ["Taunt", "Super Fang", "Yawn", "Protect"]},
    },
 	"Porygon-Z": {
