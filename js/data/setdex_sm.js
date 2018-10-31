@@ -2058,7 +2058,7 @@ var SETDEX_SM = {
 		"NU Calm Mind": {"level": 100, "evs": {"sd": 4, "sp": 252, "sa": 252}, "nature": "Timid", "ability": "Dancer", "item": "Flyinium Z", "moves": ["Calm Mind", "Hurricane", "Revelation Dance", "U-turn"]},
 	},
 	"Oricorio-Pa'u": {
-		"NU Calm Mind": {"level": 100, "evs": {"df": 4, "sp": 252, "sa": 252}, "nature": "Timid", "ability": "Dancer", "item": "Leftovers", "moves": ["Calm Mind", "Revelation Dance", "Hurricane", "Roost"]},
+      "T15 CM Flyinium": {"level": 100, "evs": {"hp": 0, "at": 0, "df": 0, "sa": 252, "sd": 4, "sp": 252}, "ivs": {"at": 0, "sp": 31}, "nature": "Timid", "ability": "Dancer", "item": "Flyinium Z", "moves": ["Revelation Dance", "Hurricane", "Calm Mind", "Roost"]},
 	},
 	"Oricorio-Pom-Pom": {
 		"PU Stallbreaker": {"level": 100, "evs": {"df": 8, "hp": 248, "sp": 252}, "nature": "Timid", "ability": "Dancer", "item": "Leftovers", "moves": ["Revelation Dance", "Toxic", "Taunt", "Roost"]},
