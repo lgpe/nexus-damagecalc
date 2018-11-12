@@ -912,7 +912,7 @@ var SETDEX_SM = {
 		"LC Defog": {"level": 5, "evs": {"sd": 112, "df": 232, "hp": 44, "sp": 72, "sa": 48}, "nature": "Bold", "ability": "Storm Drain", "item": "Berry Juice", "moves": ["Defog", "Scald", "U-turn", "Hidden Power Fighting"]},
 	},
 	"Flareon": {
-		"T15 Choice Band": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Guts", "item": "Choice Band", "moves": ["Flare Blitz", "Quick Attack", "Return", "Superpower"
+		"T15 Choice Band": {"level": 100, "evs": {"hp": 0, "at": 252, "df": 0, "sa": 0, "sd": 0, "sp": 252}, "ivs": {"at": 31, "sp": 31}, "nature": "Adamant", "ability": "Guts", "item": "Choice Band", "moves": ["Flare Blitz", "Quick Attack", "Return", "Superpower"]},
 	},
 	"Fletchling": {
 		"LC Bulky Sweeper": {"level": 5, "evs": {"df": 92, "at": 196, "sp": 180}, "nature": "Adamant", "ability": "Gale Wings", "item": "Berry Juice", "moves": ["Acrobatics", "Swords Dance", "U-turn", "Substitute"]},
