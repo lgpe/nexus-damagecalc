@@ -51,3 +51,20 @@ function CALC_STAT_ADV(poke, statName) {
 	var total = Math.floor((Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + 5) * nature);
 	stat.find(".total").text(total);
 }
+
+function CALC_HP_LG(poke) {
+	var hp = poke.find(".hp");
+	var total;
+	var base = ~~hp.find(".base").val();
+	if (base === 1) {
+		total = 1;
+	} else {
+		var level = ~~poke.find(".level").val();
+		var evs = ~~hp.find(".evs").val();
+		var ivs = ~~hp.find(".ivs").val();
+		total = Math.floor((Math.floor(base*1.1) * 2 + ivs) * level / 100) + level + 10 + Math.floor(evs);
+	}
+	hp.find(".total").text(total);
+	poke.find(".max-hp").text(total);
+	calcCurrentHP(poke, total, ~~poke.find(".percent-hp").val());
+}
