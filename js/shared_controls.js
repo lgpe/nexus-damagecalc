@@ -758,12 +758,12 @@ $(".gen").change(function () {
 		calcStat = CALC_STAT_ADV;
 		break;
     case 8:
-		pokedex = POKEDEX_XY;
-		setdex = SETDEX_ADV;
+		pokedex = POKEDEX_SM;
+		setdex = null;
 		typeChart = TYPE_CHART_XY;
 		moves = MOVES_XY;
-		items = ITEMS_XY;
-		abilities = ABILITIES_XY;
+		items = [];
+		abilities = [];
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_LG;
 		calcStat = CALC_STAT_LG;
