@@ -767,6 +767,7 @@ $(".gen").change(function () {
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+		break;
     case 8:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_SM;
@@ -777,6 +778,7 @@ $(".gen").change(function () {
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_LG;
 		calcStat = CALC_STAT_ADV;
+		break;
 	}
 	clearField();
 	$("#importedSets").prop("checked", false);
