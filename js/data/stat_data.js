@@ -74,7 +74,7 @@ function CALC_HP_LG(poke) {
 		var level = ~~poke.find(".level").val();
 		var evs = ~~hp.find(".evs").val();
 		var ivs = ~~hp.find(".ivs").val();
-		total = Math.floor((Math.floor(base*1.1) * 2 + ivs) * level / 100) + level + 10 + Math.floor(evs);
+		total = Math.floor((base * 2 + ivs) * level / 100) + level + 10 + Math.floor(evs);
 	}
 	hp.find(".total").text(total);
 	poke.find(".max-hp").text(total);
