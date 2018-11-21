@@ -13730,3 +13730,55 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 		"gender": "genderless"
 	}
 });
+
+var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
+    "Pikachu-Starter": {
+		"t1": "Electric",
+		"bs": {
+			"hp": 45,
+			"at": 80,
+			"df": 50,
+			"sa": 75,
+			"sd": 60,
+			"sl": 120
+		},
+		"w": 6.0,
+	},
+    "Eevee-Starter": {
+		"t1": "Normal",
+		"bs": {
+			"hp": 65,
+			"at": 75,
+			"df": 70,
+			"sa": 65,
+			"sd": 85,
+			"sl": 75
+		},
+		"w": 6.0,
+	},
+    "Meltan": {
+		"t1": "Steel",
+		"bs": {
+			"hp": 46,
+			"at": 65,
+			"df": 65,
+			"sa": 55,
+			"sd": 35,
+			"sl": 34
+		},
+		"w": 6.0,
+        "canEvolve": true
+	},
+    "Melmetal": {
+		"t1": "Steel",
+		"bs": {
+			"hp": 135,
+			"at": 143,
+			"df": 143,
+			"sa": 80,
+			"sd": 65,
+			"sl": 34
+		},
+		"w": 6.0,
+	},
+});
