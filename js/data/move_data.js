@@ -3515,3 +3515,73 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
 		zp: 160
 	}
 });
+
+var MOVES_SM = $.extend(true, {}, MOVES_SM, {
+    'Mega Drain': {bp: 70},
+    'Solar Beam': {bp: 200},
+    'Sky Attack': {bp: 200},
+    'Zippy Zap': {
+		bp: 50,
+		type: 'Electric',
+		category: 'Physical',
+		alwaysCrit: true,
+        hasPriority: true,
+	},
+    'Bouncy Bubble': {
+		bp: 90,
+		type: 'Water',
+        category: 'Special',
+		givesHealth: true,
+		percentHealed: 0.5
+	},
+    'Floaty Fall': {
+		bp: 90,
+		type: 'Flying',
+		category: 'Physical',
+		hasSecondaryEffect: true,
+		makesContact: true,
+	},
+    'Sizzly Slide': {
+		bp: 90,
+		type: 'Fire',
+		category: 'Physical',
+		hasSecondaryEffect: true,
+		makesContact: true,
+	},
+    'Buzzy Buzz': {
+		bp: 90,
+		type: 'Electric',
+		category: 'Special',
+		hasSecondaryEffect: true,
+	},
+    'Baddy Bad': {
+		bp: 90,
+		type: 'Dark',
+		category: 'Special',
+		hasSecondaryEffect: true,
+	},
+    'Glitzy Glow': {
+		bp: 90,
+		type: 'Psychic',
+		category: 'Special',
+		hasSecondaryEffect: true,
+	},
+    'Sappy Seed': {
+		bp: 90,
+		type: 'Grass',
+		category: 'Physical',
+		hasSecondaryEffect: true,
+	},
+    'Sparkly Swirl': {
+		bp: 90,
+		type: 'Fairy',
+		category: 'Special',
+		hasSecondaryEffect: true,
+	},
+    'Freezy Frost': {
+		bp: 90,
+		type: 'Ice',
+		category: 'Special',
+		hasSecondaryEffect: true,
+	}
+});
