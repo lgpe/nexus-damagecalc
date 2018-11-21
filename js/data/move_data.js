@@ -3516,7 +3516,7 @@ var MOVES_SM = $.extend(true, {}, MOVES_XY, {
 	}
 });
 
-var MOVES_SM = $.extend(true, {}, MOVES_SM, {
+var MOVES_LG = $.extend(true, {}, MOVES_SM, {
     'Mega Drain': {bp: 70},
     'Solar Beam': {bp: 200},
     'Sky Attack': {bp: 200},
