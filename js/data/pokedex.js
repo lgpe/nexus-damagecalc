@@ -13731,7 +13731,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
 	}
 });
 
-var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
+var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
     "Pikachu-Starter": {
 		"t1": "Electric",
 		"bs": {
