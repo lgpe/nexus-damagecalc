@@ -757,6 +757,18 @@ $(".gen").change(function () {
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
 		break;
+	case 8:
+		pokedex = POKEDEX_SM;
+		setdex = SETDEX_LG;
+		typeChart = TYPE_CHART_XY;
+		moves = MOVES_SM;
+		items = ITEMS_SM;
+		abilities = ABILITIES_SM;
+		STATS = STATS_GSC;
+		calcHP = CALC_HP_LG;
+		calcStat = CALC_STAT_ADV;
+		break;
+	}
 	default:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_SM;
@@ -767,17 +779,6 @@ $(".gen").change(function () {
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-    case 8:
-		pokedex = POKEDEX_SM;
-		setdex = SETDEX_SM;
-		typeChart = TYPE_CHART_XY;
-		moves = MOVES_SM;
-		items = ITEMS_SM;
-		abilities = ABILITIES_SM;
-		STATS = STATS_GSC;
-		calcHP = CALC_HP_LG;
-		calcStat = CALC_STAT_ADV;
-	}
 	clearField();
 	$("#importedSets").prop("checked", false);
 	loadDefaultLists();
