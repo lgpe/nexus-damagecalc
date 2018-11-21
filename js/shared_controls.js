@@ -776,7 +776,7 @@ $(".gen").change(function () {
 		abilities = ABILITIES_SM;
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_LG;
-		calcStat = CALC_STAT_LG;
+		calcStat = CALC_STAT_ADV;
 	}
 	clearField();
 	$("#importedSets").prop("checked", false);
