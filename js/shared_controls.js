@@ -766,7 +766,7 @@ $(".gen").change(function () {
 		abilities = ABILITIES_XY;
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_LG;
-		calcStat = CALC_STAT_ADV;
+		calcStat = CALC_STAT_LG;
 		break;
 	default:
 		pokedex = POKEDEX_SM;
