@@ -767,7 +767,7 @@ $(".gen").change(function () {
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
-    case 7.5:
+    case 8:
 		pokedex = POKEDEX_SM;
 		setdex = SETDEX_SM;
 		typeChart = TYPE_CHART_XY;
