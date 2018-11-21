@@ -60,7 +60,7 @@ function CALC_STAT_LG(poke, statName) {
 	var ivs = ~~stat.find(".ivs").val();
 	var natureMods = NATURES[poke.find(".nature").val()];
 	var nature = natureMods[0] === statName ? 1.1 : natureMods[1] === statName ? 0.9 : 1;
-	var total = Math.floor((Math.floor((Math.floor(base*2.2) + ivs) * level / 100) + 5) * nature) + evs;
+	var total = Math.floor((Math.floor((Math.floor(base*1.1) * 2 + ivs) * level / 100) + 5) * nature) + evs;
 	stat.find(".total").text(total);
 }
 
