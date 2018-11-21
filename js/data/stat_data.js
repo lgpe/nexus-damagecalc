@@ -1,4 +1,4 @@
-﻿var AT = "at", DF = "df", SA = "sa", SD = "sd", SP = "sp", SL = "sl";
+var AT = "at", DF = "df", SA = "sa", SD = "sd", SP = "sp", SL = "sl";
 var STATS_RBY = [AT, DF, SL, SP];
 var STATS_GSC = [AT, DF, SA, SD, SP];
 
@@ -49,6 +49,18 @@ function CALC_STAT_ADV(poke, statName) {
 	var natureMods = NATURES[poke.find(".nature").val()];
 	var nature = natureMods[0] === statName ? 1.1 : natureMods[1] === statName ? 0.9 : 1;
 	var total = Math.floor((Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + 5) * nature);
+	stat.find(".total").text(total);
+}
+
+function CALC_STAT_LG(poke, statName) {
+	var stat = poke.find("." + statName);
+	var level = ~~poke.find(".level").val();
+	var base = ~~stat.find(".base").val();
+	var evs = ~~stat.find(".evs").val();
+	var ivs = ~~stat.find(".ivs").val();
+	var natureMods = NATURES[poke.find(".nature").val()];
+	var nature = natureMods[0] === statName ? 1.1 : natureMods[1] === statName ? 0.9 : 1;
+	var total = Math.floor((Math.floor((Math.floor(base*1.1) * 2 + ivs) * level / 100) + 5) * nature) + Math.floor(evs);
 	stat.find(".total").text(total);
 }
 
