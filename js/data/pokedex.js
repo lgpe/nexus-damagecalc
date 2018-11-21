@@ -13740,7 +13740,7 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
 			"df": 50,
 			"sa": 75,
 			"sd": 60,
-			"sl": 120
+			"sp": 120
 		},
 		"w": 6.0,
 	},
@@ -13752,7 +13752,7 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
 			"df": 70,
 			"sa": 65,
 			"sd": 85,
-			"sl": 75
+			"sp": 75
 		},
 		"w": 6.0,
 	},
@@ -13764,7 +13764,7 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
 			"df": 65,
 			"sa": 55,
 			"sd": 35,
-			"sl": 34
+			"sp": 34
 		},
 		"w": 6.0,
         "canEvolve": true
@@ -13777,7 +13777,7 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
 			"df": 143,
 			"sa": 80,
 			"sd": 65,
-			"sl": 34
+			"sp: 34
 		},
 		"w": 6.0,
 	},
