@@ -767,6 +767,16 @@ $(".gen").change(function () {
 		STATS = STATS_GSC;
 		calcHP = CALC_HP_ADV;
 		calcStat = CALC_STAT_ADV;
+    case 7.5:
+		pokedex = POKEDEX_SM;
+		setdex = SETDEX_SM;
+		typeChart = TYPE_CHART_XY;
+		moves = MOVES_SM;
+		items = ITEMS_SM;
+		abilities = ABILITIES_SM;
+		STATS = STATS_GSC;
+		calcHP = CALC_HP_LG;
+		calcStat = CALC_STAT_ADV;
 	}
 	clearField();
 	$("#importedSets").prop("checked", false);
