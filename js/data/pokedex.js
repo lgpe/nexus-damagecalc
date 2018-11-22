@@ -13777,7 +13777,7 @@ var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
 			"df": 143,
 			"sa": 80,
 			"sd": 65,
-			"sp: 34
+			"sp": 34
 		},
 		"w": 6.0,
 	},
