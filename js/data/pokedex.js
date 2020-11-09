@@ -12747,7 +12747,7 @@ var POKEDEX_SM = {
 		"bs": {"hp": 135, "at": 143, "df": 143, "sa": 80, "sd": 65, "sp": 34},
 		"w": 6.0,
 	},
-});
+};
 
 var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
     "Pikachu-Starter": {
