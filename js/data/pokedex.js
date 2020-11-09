@@ -11632,1122 +11632,2104 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
 	}
 });
 
-var POKEDEX_SM = {
-    	"Bulbasaur": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 45, "at": 49, "df": 49, "sa": 65, "sd": 65, "sp": 45},
-		"w": 6.9,
-	},
-	"Ivysaur": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 60, "at": 62, "df": 63, "sa": 80, "sd": 80, "sp": 60},
-		"w": 13.0,
-	},
-	"Venusaur": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 80, "at": 82, "df": 83, "sa": 100, "sd": 100, "sp": 80},
-		"w": 100.0,
-		"formes": ["Venusaur", "Venusaur-Mega"],
-	},
-	"Venusaur-Mega": {
-		"isAlternateForme": true,
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 80, "at": 100, "df": 123, "sa": 122, "sd": 120, "sp": 80},
-		"w": 155.5,
-	},
-	"Charmander": {
-		"t1": "Fire",
-		"bs": {"hp": 39, "at": 52, "df": 43, "sa": 60, "sd": 50, "sp": 65},
-		"w": 8.5,
-	},
-	"Charmeleon": {
-		"t1": "Fire",
-		"bs": {"hp": 58, "at": 64, "df": 58, "sa": 80, "sd": 65, "sp": 80},
-		"w": 19.0,
-	},
-	"Charizard": {
-		"t1": "Fire",
-		"t2": "Flying",
-		"bs": {"hp": 78, "at": 84, "df": 78, "sa": 109, "sd": 85, "sp": 100},
-		"w": 90.5,
-		"formes": ["Charizard", "Charizard-Mega-X", "Charizard-Mega-Y"],
-	},
-	"Charizard-Mega-X": {
-		"isAlternateForme": true,
-		"t1": "Fire",
-		"t2": "Dragon",
-		"bs": {"hp": 78, "at": 130, "df": 111, "sa": 130, "sd": 85, "sp": 100},
-		"w": 110.5,
-	},
-	"Charizard-Mega-Y": {
-		"isAlternateForme": true,
-		"t1": "Fire",
-		"t2": "Flying",
-		"bs": {"hp": 78, "at": 104, "df": 78, "sa": 159, "sd": 115, "sp": 100},
-		"w": 100.5,
-	},
-	"Squirtle": {
+var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
+	"Alakazam-Mega": {"bs": {"sd": 105}},
+	"Arbok": {"bs": {"at": 95}},
+	"Ariados": {"bs": {"sd": 70}},
+	"Beartic": {"bs": {"at": 130}},
+	"Chimecho": {"bs": {"hp": 75, "df": 80, "sd": 90}},
+	"Corsola": {"bs": {"hp": 65, "df": 95, "sd": 95}},
+	"Crustle": {"bs": {"at": 105}},
+	"Cryogonal": {"bs": {"hp": 80, "df": 50}},
+	"Delcatty": {"bs": {"sp": 90}},
+	"Diglett": {"formes": ["Diglett", "Diglett-Alola"]},
+	"Dodrio": {"bs": {"sp": 110}},
+	"Dugtrio": {"bs": {"at": 100}, "formes": ["Dugtrio", "Dugtrio-Alola"]},
+	"Electrode": {"bs": {"sp": 150}},
+	"Exeggutor": {"bs": {"sd": 75}, "formes": ["Exeggutor", "Exeggutor-Alola"]},
+	"Farfetch'd": {"bs": {"at": 90}},
+	"Geodude": {"formes": ["Geodude", "Geodude-Alola"]},
+	"Gengar": {"ab": ""},
+	"Golem": {"formes": ["Golem", "Golem-Alola"]},
+	"Graveler": {"formes": ["Graveler", "Graveler-Alola"]},
+	"Greninja": {"formes": ["Greninja", "Greninja-Ash"]},
+	"Grimer": {"formes": ["Grimer", "Grimer-Alola"]},
+	"Illumise": {"bs": {"df": 75, "sd": 85}},
+	"Lunatone": {"bs": {"hp": 90}},
+	"Magcargo": {"bs": {"hp": 60, "sa": 90}},
+	"Mantine": {"bs": {"hp": 85}},
+	"Marowak": {"formes": ["Marowak", "Marowak-Alola", "Marowak-Alola-Totem"]},
+	"Masquerain": {"bs": {"sa": 100, "sp": 80}},
+	"Meowth": {"formes": ["Meowth", "Meowth-Alola"]},
+	"Muk": {"formes": ["Muk", "Muk-Alola"]},
+	"Ninetales": {"formes": ["Ninetales", "Ninetales-Alola"]},
+	"Noctowl": {"bs": {"sa": 86}},
+	"Pelipper": {"bs": {"sa": 95}},
+	"Persian": {"formes": ["Persian", "Persian-Alola"]},
+	"Qwilfish": {"bs": {"df": 85}},
+	"Raichu": {"formes": ["Raichu", "Raichu-Alola"]},
+	"Raticate": {"formes": ["Raticate", "Raticate-Alola", "Raticate-Alola-Totem"]},
+	"Rattata": {"formes": ["Rattata", "Rattata-Alola"]},
+	"Sandshrew": {"formes": ["Sandshrew", "Sandshrew-Alola"]},
+	"Sandslash": {"formes": ["Sandslash", "Sandslash-Alola"]},
+	"Solrock": {"bs": {"hp": 90}},
+	"Swellow": {"bs": {"sa": 75}},
+	"Volbeat": {"bs": {"df": 75, "sd": 85}},
+	"Vulpix": {"formes": ["Vulpix", "Vulpix-Alola"]},
+	"Woobat": {"bs": {"hp": 65}},
+	"Zygarde": {"formes": ["Zygarde", "Zygarde-10%", "Zygarde-Complete"]},
+	"Araquanid": {
 		"t1": "Water",
-		"bs": {"hp": 44, "at": 48, "df": 65, "sa": 50, "sd": 64, "sp": 43},
-		"w": 9,
+		"t2": "Bug",
+		"bs": {
+			"hp": 68,
+			"at": 70,
+			"df": 92,
+			"sa": 50,
+			"sd": 132,
+			"sp": 42
+		},
+		"ab": "Water Bubble",
+		"w": 82.0,
+		"formes": ["Araquanid", "Araquanid-Totem"]
 	},
-	"Wartortle": {
+	"Araquanid-Totem": {
 		"t1": "Water",
-		"bs": {"hp": 59, "at": 63, "df": 80, "sa": 65, "sd": 80, "sp": 58},
-		"w": 22.5,
+		"t2": "Bug",
+		"bs": {
+			"hp": 68,
+			"at": 70,
+			"df": 92,
+			"sa": 50,
+			"sd": 132,
+			"sp": 42
+		},
+		"ab": "Water Bubble",
+		"w": 217.5,
+		"isAlternateForme": true
 	},
-	"Blastoise": {
-		"t1": "Water",
-		"bs": {"hp": 79, "at": 83, "df": 100, "sa": 85, "sd": 105, "sp": 78},
-		"w": 85.5,
-		"formes": ["Blastoise", "Blastoise-Mega"],
-	},
-	"Blastoise-Mega": {
-		"isAlternateForme": true,
-		"t1": "Water",
-		"bs": {"hp": 79, "at": 103, "df": 120, "sa": 135, "sd": 115, "sp": 78},
-		"w": 101.1,
-	},
-	"Caterpie": {
-		"t1": "Bug",
-		"bs": {"hp": 45, "at": 30, "df": 35, "sa": 20, "sd": 20, "sp": 45},
-		"w": 2.9,
-	},
-	"Metapod": {
-		"t1": "Bug",
-		"bs": {"hp": 50, "at": 20, "df": 55, "sa": 25, "sd": 25, "sp": 30},
-		"w": 9.9,
-	},
-	"Butterfree": {
-		"t1": "Bug",
-		"t2": "Flying",
-		"bs": {"hp": 60, "at": 45, "df": 50, "sa": 90, "sd": 80, "sp": 70},
-		"w": 32.0,
-	},
-	"Weedle": {
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 40, "at": 35, "df": 30, "sa": 20, "sd": 20, "sp": 50},
-		"w": 3.2,
-	},
-	"Kakuna": {
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 45, "at": 25, "df": 50, "sa": 25, "sd": 25, "sp": 35},
-		"w": 10.0,
-	},
-	"Beedrill": {
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 65, "at": 90, "df": 40, "sa": 45, "sd": 80, "sp": 75},
-		"w": 29.5,
-		"formes": ["Beedrill", "Beedrill-Mega"],
-	},
-	"Beedrill-Mega": {
-		"isAlternateForme": true,
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 65, "at": 150, "df": 40, "sa": 15, "sd": 80, "sp": 145},
-		"w": 40.5,
-	},
-	"Pidgey": {
+	"Bewear": {
 		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 40, "at": 45, "df": 40, "sa": 35, "sd": 35, "sp": 56},
-		"w": 1.8,
-	},
-	"Pidgeotto": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 63, "at": 60, "df": 55, "sa": 50, "sd": 50, "sp": 71},
-		"w": 30.0,
-	},
-	"Pidgeot": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 83, "at": 80, "df": 75, "sa": 70, "sd": 70, "sp": 101},
-		"w": 39.5,
-		"formes": ["Pidgeot", "Pidgeot-Mega"],
-	},
-	"Pidgeot-Mega": {
-		"isAlternateForme": true,
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 83, "at": 80, "df": 80, "sa": 135, "sd": 80, "sp": 121},
-		"w": 50.5,
-	},
-	"Rattata": {
-		"t1": "Normal",
-		"bs": {"hp": 30, "at": 56, "df": 35, "sa": 25, "sd": 35, "sp": 72},
-		"w": 3.5,
-		"formes": ["Rattata", "Rattata-Alola"],
-	},
-	"Rattata-Alola": {
-		"isAlternateForme": true,
-		"t1": "Dark",
-		"t2": "Normal",
-		"bs": {"hp": 30, "at": 56, "df": 35, "sa": 25, "sd": 35, "sp": 72},
-		"w": 3.8,
-	},
-	"Raticate": {
-		"t1": "Normal",
-		"bs": {"hp": 55, "at": 81, "df": 60, "sa": 50, "sd": 70, "sp": 97},
-		"w": 18.5,
-		"formes": ["Raticate", "Raticate-Alola"],
-	},
-	"Raticate-Alola": {
-		"isAlternateForme": true,
-		"t1": "Dark",
-		"t2": "Normal",
-		"bs": {"hp": 75, "at": 71, "df": 70, "sa": 40, "sd": 80, "sp": 77},
-		"w": 25.5,
-	},
-	"Spearow": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 40, "at": 60, "df": 30, "sa": 31, "sd": 31, "sp": 70},
-		"w": 2,
-	},
-	"Fearow": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 65, "at": 90, "df": 65, "sa": 61, "sd": 61, "sp": 100},
-		"w": 38.0,
-	},
-	"Ekans": {
-		"t1": "Poison",
-		"bs": {"hp": 35, "at": 60, "df": 44, "sa": 40, "sd": 54, "sp": 55},
-		"w": 6.9,
-	},
-	"Arbok": {
-		"t1": "Poison",
-		"bs": {"hp": 60, "at": 95, "df": 69, "sa": 65, "sd": 79, "sp": 80},
-		"w": 65.0,
-	},
-	"Pikachu": {
-		"t1": "Electric",
-		"bs": {"hp": 35, "at": 55, "df": 40, "sa": 50, "sd": 50, "sp": 90},
-		"w": 6,
-	},
-	"Pikachu-Starter": {
-		"t1": "Electric",
-		"bs": {"hp": 45, "at": 80, "df": 50, "sa": 75, "sd": 60, "sp": 120},
-		"w": 6,
-	},
-	"Raichu": {
-		"t1": "Electric",
-		"bs": {"hp": 60, "at": 90, "df": 55, "sa": 90, "sd": 80, "sp": 110},
-		"w": 30.0,
-		"formes": ["Raichu", "Raichu-Alola"],
-	},
-	"Raichu-Alola": {
-		"isAlternateForme": true,
-		"t1": "Electric",
-		"t2": "Psychic",
-		"bs": {"hp": 60, "at": 85, "df": 50, "sa": 95, "sd": 85, "sp": 110},
-		"w": 21.0,
-	},
-	"Sandshrew": {
-		"t1": "Ground",
-		"bs": {"hp": 50, "at": 75, "df": 85, "sa": 20, "sd": 30, "sp": 40},
-		"w": 12.0,
-		"formes": ["Sandshrew", "Sandshrew-Alola"],
-	},
-	"Sandshrew-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ice",
-		"t2": "Steel",
-		"bs": {"hp": 50, "at": 75, "df": 90, "sa": 10, "sd": 35, "sp": 40},
-		"w": 40.0,
-	},
-	"Sandslash": {
-		"t1": "Ground",
-		"bs": {"hp": 75, "at": 100, "df": 110, "sa": 45, "sd": 55, "sp": 65},
-		"w": 29.5,
-		"formes": ["Sandslash", "Sandslash-Alola"],
-	},
-	"Sandslash-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ice",
-		"t2": "Steel",
-		"bs": {"hp": 75, "at": 100, "df": 120, "sa": 25, "sd": 65, "sp": 65},
-		"w": 55.0,
-	},
-	"Nidoran-F": {
-		"t1": "Poison",
-		"bs": {"hp": 55, "at": 47, "df": 52, "sa": 40, "sd": 40, "sp": 41},
-		"w": 7,
-	},
-	"Nidorina": {
-		"t1": "Poison",
-		"bs": {"hp": 70, "at": 62, "df": 67, "sa": 55, "sd": 55, "sp": 56},
-		"w": 20.0,
-	},
-	"Nidoqueen": {
-		"t1": "Poison",
-		"t2": "Ground",
-		"bs": {"hp": 90, "at": 92, "df": 87, "sa": 75, "sd": 85, "sp": 76},
-		"w": 60.0,
-	},
-	"Nidoran-M": {
-		"t1": "Poison",
-		"bs": {"hp": 46, "at": 57, "df": 40, "sa": 40, "sd": 40, "sp": 50},
-		"w": 9,
-	},
-	"Nidorino": {
-		"t1": "Poison",
-		"bs": {"hp": 61, "at": 72, "df": 57, "sa": 55, "sd": 55, "sp": 65},
-		"w": 19.5,
-	},
-	"Nidoking": {
-		"t1": "Poison",
-		"t2": "Ground",
-		"bs": {"hp": 81, "at": 102, "df": 77, "sa": 85, "sd": 75, "sp": 85},
-		"w": 62.0,
-	},
-	"Clefairy": {
-		"t1": "Fairy",
-		"bs": {"hp": 70, "at": 45, "df": 48, "sa": 60, "sd": 65, "sp": 35},
-		"w": 7.5,
-	},
-	"Clefable": {
-		"t1": "Fairy",
-		"bs": {"hp": 95, "at": 70, "df": 73, "sa": 95, "sd": 90, "sp": 60},
-		"w": 40.0,
-	},
-	"Vulpix": {
-		"t1": "Fire",
-		"bs": {"hp": 38, "at": 41, "df": 40, "sa": 50, "sd": 65, "sp": 65},
-		"w": 9.9,
-		"formes": ["Vulpix", "Vulpix-Alola"],
-	},
-	"Vulpix-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ice",
-		"bs": {"hp": 38, "at": 41, "df": 40, "sa": 50, "sd": 65, "sp": 65},
-		"w": 9.9,
-	},
-	"Ninetales": {
-		"t1": "Fire",
-		"bs": {"hp": 73, "at": 76, "df": 75, "sa": 81, "sd": 100, "sp": 100},
-		"w": 19.9,
-		"formes": ["Ninetales", "Ninetales-Alola"],
-	},
-	"Ninetales-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ice",
-		"t2": "Fairy",
-		"bs": {"hp": 73, "at": 67, "df": 75, "sa": 81, "sd": 100, "sp": 109},
-		"w": 19.9,
-	},
-	"Jigglypuff": {
-		"t1": "Normal",
-		"t2": "Fairy",
-		"bs": {"hp": 115, "at": 45, "df": 20, "sa": 45, "sd": 25, "sp": 20},
-		"w": 5.5,
-	},
-	"Wigglytuff": {
-		"t1": "Normal",
-		"t2": "Fairy",
-		"bs": {"hp": 140, "at": 70, "df": 45, "sa": 85, "sd": 50, "sp": 45},
-		"w": 12.0,
-	},
-	"Zubat": {
-		"t1": "Poison",
-		"t2": "Flying",
-		"bs": {"hp": 40, "at": 45, "df": 35, "sa": 30, "sd": 40, "sp": 55},
-		"w": 7.5,
-	},
-	"Golbat": {
-		"t1": "Poison",
-		"t2": "Flying",
-		"bs": {"hp": 75, "at": 80, "df": 70, "sa": 65, "sd": 75, "sp": 90},
-		"w": 55.0,
-	},
-	"Oddish": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 45, "at": 50, "df": 55, "sa": 75, "sd": 65, "sp": 30},
-		"w": 5.4,
-	},
-	"Gloom": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 60, "at": 65, "df": 70, "sa": 85, "sd": 75, "sp": 40},
-		"w": 8.6,
-	},
-	"Vileplume": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 75, "at": 80, "df": 85, "sa": 110, "sd": 90, "sp": 50},
-		"w": 18.6,
-	},
-	"Paras": {
-		"t1": "Bug",
-		"t2": "Grass",
-		"bs": {"hp": 35, "at": 70, "df": 55, "sa": 45, "sd": 55, "sp": 25},
-		"w": 5.4,
-	},
-	"Parasect": {
-		"t1": "Bug",
-		"t2": "Grass",
-		"bs": {"hp": 60, "at": 95, "df": 80, "sa": 60, "sd": 80, "sp": 30},
-		"w": 29.5,
-	},
-	"Venonat": {
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 60, "at": 55, "df": 50, "sa": 40, "sd": 55, "sp": 45},
-		"w": 30.0,
-	},
-	"Venomoth": {
-		"t1": "Bug",
-		"t2": "Poison",
-		"bs": {"hp": 70, "at": 65, "df": 60, "sa": 90, "sd": 75, "sp": 90},
-		"w": 12.5,
-	},
-	"Diglett": {
-		"t1": "Ground",
-		"bs": {"hp": 10, "at": 55, "df": 25, "sa": 35, "sd": 45, "sp": 95},
-		"w": 0.8,
-		"formes": ["Diglett", "Diglett-Alola"],
-	},
-	"Diglett-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ground",
-		"t2": "Steel",
-		"bs": {"hp": 10, "at": 55, "df": 30, "sa": 35, "sd": 45, "sp": 90},
-		"w": 1,
-	},
-	"Dugtrio": {
-		"t1": "Ground",
-		"bs": {"hp": 35, "at": 100, "df": 50, "sa": 50, "sd": 70, "sp": 120},
-		"w": 33.3,
-		"formes": ["Dugtrio", "Dugtrio-Alola"],
-	},
-	"Dugtrio-Alola": {
-		"isAlternateForme": true,
-		"t1": "Ground",
-		"t2": "Steel",
-		"bs": {"hp": 35, "at": 100, "df": 60, "sa": 50, "sd": 70, "sp": 110},
-		"w": 66.6,
-	},
-	"Meowth": {
-		"t1": "Normal",
-		"bs": {"hp": 40, "at": 45, "df": 35, "sa": 40, "sd": 40, "sp": 90},
-		"w": 4.2,
-		"formes": ["Meowth", "Meowth-Alola"],
-	},
-	"Meowth-Alola": {
-		"isAlternateForme": true,
-		"t1": "Dark",
-		"bs": {"hp": 40, "at": 35, "df": 35, "sa": 50, "sd": 40, "sp": 90},
-		"w": 4.2,
-	},
-	"Persian": {
-		"t1": "Normal",
-		"bs": {"hp": 65, "at": 70, "df": 60, "sa": 65, "sd": 65, "sp": 115},
-		"w": 32.0,
-		"formes": ["Persian", "Persian-Alola"],
-	},
-	"Persian-Alola": {
-		"isAlternateForme": true,
-		"t1": "Dark",
-		"bs": {"hp": 65, "at": 60, "df": 60, "sa": 75, "sd": 65, "sp": 115},
-		"w": 33.0,
-	},
-	"Psyduck": {
-		"t1": "Water",
-		"bs": {"hp": 50, "at": 52, "df": 48, "sa": 65, "sd": 50, "sp": 55},
-		"w": 19.6,
-	},
-	"Golduck": {
-		"t1": "Water",
-		"bs": {"hp": 80, "at": 82, "df": 78, "sa": 95, "sd": 80, "sp": 85},
-		"w": 76.6,
-	},
-	"Mankey": {
-		"t1": "Fighting",
-		"bs": {"hp": 40, "at": 80, "df": 35, "sa": 35, "sd": 45, "sp": 70},
-		"w": 28.0,
-	},
-	"Primeape": {
-		"t1": "Fighting",
-		"bs": {"hp": 65, "at": 105, "df": 60, "sa": 60, "sd": 70, "sp": 95},
-		"w": 32.0,
-	},
-	"Growlithe": {
-		"t1": "Fire",
-		"bs": {"hp": 55, "at": 70, "df": 45, "sa": 70, "sd": 50, "sp": 60},
-		"w": 19.0,
-	},
-	"Arcanine": {
-		"t1": "Fire",
-		"bs": {"hp": 90, "at": 110, "df": 80, "sa": 100, "sd": 80, "sp": 95},
-		"w": 155.0,
-	},
-	"Poliwag": {
-		"t1": "Water",
-		"bs": {"hp": 40, "at": 50, "df": 40, "sa": 40, "sd": 40, "sp": 90},
-		"w": 12.4,
-	},
-	"Poliwhirl": {
-		"t1": "Water",
-		"bs": {"hp": 65, "at": 65, "df": 65, "sa": 50, "sd": 50, "sp": 90},
-		"w": 20.0,
-	},
-	"Poliwrath": {
-		"t1": "Water",
 		"t2": "Fighting",
-		"bs": {"hp": 90, "at": 95, "df": 95, "sa": 70, "sd": 90, "sp": 70},
-		"w": 54.0,
+		"bs": {
+			"hp": 120,
+			"at": 125,
+			"df": 80,
+			"sa": 55,
+			"sd": 60,
+			"sp": 60
+		},
+		"ab": "Fluffy",
+		"w": 135.0,
 	},
-	"Abra": {
-		"t1": "Psychic",
-		"bs": {"hp": 25, "at": 20, "df": 15, "sa": 105, "sd": 55, "sp": 90},
-		"w": 19.5,
-	},
-	"Kadabra": {
-		"t1": "Psychic",
-		"bs": {"hp": 40, "at": 35, "df": 30, "sa": 120, "sd": 70, "sp": 105},
-		"w": 56.5,
-	},
-	"Alakazam": {
-		"t1": "Psychic",
-		"bs": {"hp": 55, "at": 50, "df": 45, "sa": 135, "sd": 95, "sp": 120},
-		"w": 48.0,
-		"formes": ["Alakazam", "Alakazam-Mega"],
-	},
-	"Alakazam-Mega": {
-		"isAlternateForme": true,
-		"t1": "Psychic",
-		"bs": {"hp": 55, "at": 50, "df": 65, "sa": 175, "sd": 105, "sp": 150},
-		"w": 48.0,
-	},
-	"Machop": {
-		"t1": "Fighting",
-		"bs": {"hp": 70, "at": 80, "df": 50, "sa": 35, "sd": 35, "sp": 35},
-		"w": 19.5,
-	},
-	"Machoke": {
-		"t1": "Fighting",
-		"bs": {"hp": 80, "at": 100, "df": 70, "sa": 50, "sd": 60, "sp": 45},
-		"w": 70.5,
-	},
-	"Machamp": {
-		"t1": "Fighting",
-		"bs": {"hp": 90, "at": 130, "df": 80, "sa": 65, "sd": 85, "sp": 55},
-		"w": 130.0,
-	},
-	"Bellsprout": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 50, "at": 75, "df": 35, "sa": 70, "sd": 30, "sp": 40},
-		"w": 4,
-	},
-	"Weepinbell": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 65, "at": 90, "df": 50, "sa": 85, "sd": 45, "sp": 55},
-		"w": 6.4,
-	},
-	"Victreebel": {
-		"t1": "Grass",
-		"t2": "Poison",
-		"bs": {"hp": 80, "at": 105, "df": 65, "sa": 100, "sd": 70, "sp": 70},
-		"w": 15.5,
-	},
-	"Tentacool": {
-		"t1": "Water",
-		"t2": "Poison",
-		"bs": {"hp": 40, "at": 40, "df": 35, "sa": 50, "sd": 100, "sp": 70},
-		"w": 45.5,
-	},
-	"Tentacruel": {
-		"t1": "Water",
-		"t2": "Poison",
-		"bs": {"hp": 80, "at": 70, "df": 65, "sa": 80, "sd": 120, "sp": 100},
-		"w": 55.0,
-	},
-	"Geodude": {
-		"t1": "Rock",
-		"t2": "Ground",
-		"bs": {"hp": 40, "at": 80, "df": 100, "sa": 30, "sd": 30, "sp": 20},
-		"w": 20.0,
-		"formes": ["Geodude", "Geodude-Alola"],
-	},
-	"Geodude-Alola": {
-		"isAlternateForme": true,
-		"t1": "Rock",
-		"t2": "Electric",
-		"bs": {"hp": 40, "at": 80, "df": 100, "sa": 30, "sd": 30, "sp": 20},
-		"w": 20.3,
-	},
-	"Graveler": {
-		"t1": "Rock",
-		"t2": "Ground",
-		"bs": {"hp": 55, "at": 95, "df": 115, "sa": 45, "sd": 45, "sp": 35},
-		"w": 105.0,
-		"formes": ["Graveler", "Graveler-Alola"],
-	},
-	"Graveler-Alola": {
-		"isAlternateForme": true,
-		"t1": "Rock",
-		"t2": "Electric",
-		"bs": {"hp": 55, "at": 95, "df": 115, "sa": 45, "sd": 45, "sp": 35},
-		"w": 110.0,
-	},
-	"Golem": {
-		"t1": "Rock",
-		"t2": "Ground",
-		"bs": {"hp": 80, "at": 120, "df": 130, "sa": 55, "sd": 65, "sp": 45},
-		"w": 300.0,
-		"formes": ["Golem", "Golem-Alola"],
-	},
-	"Golem-Alola": {
-		"isAlternateForme": true,
-		"t1": "Rock",
-		"t2": "Electric",
-		"bs": {"hp": 80, "at": 120, "df": 130, "sa": 55, "sd": 65, "sp": 45},
-		"w": 316.0,
-	},
-	"Ponyta": {
-		"t1": "Fire",
-		"bs": {"hp": 50, "at": 85, "df": 55, "sa": 65, "sd": 65, "sp": 90},
-		"w": 30.0,
-	},
-	"Rapidash": {
-		"t1": "Fire",
-		"bs": {"hp": 65, "at": 100, "df": 70, "sa": 80, "sd": 80, "sp": 105},
-		"w": 95.0,
-	},
-	"Slowpoke": {
-		"t1": "Water",
-		"t2": "Psychic",
-		"bs": {"hp": 90, "at": 65, "df": 65, "sa": 40, "sd": 40, "sp": 15},
-		"w": 36.0,
-		"formes": ["Slowpoke"],
-	},
-	"Slowbro": {
-		"t1": "Water",
-		"t2": "Psychic",
-		"bs": {"hp": 95, "at": 75, "df": 110, "sa": 100, "sd": 80, "sp": 30},
-		"w": 78.5,
-		"formes": ["Slowbro", "Slowbro-Mega"],
-	},
-	"Slowbro-Mega": {
-		"isAlternateForme": true,
-		"t1": "Water",
-		"t2": "Psychic",
-		"bs": {"hp": 95, "at": 75, "df": 180, "sa": 130, "sd": 80, "sp": 30},
-		"w": 120.0,
-	},
-	"Magnemite": {
-		"t1": "Electric",
-		"t2": "Steel",
-		"gender": "genderless",
-		"bs": {"hp": 25, "at": 35, "df": 70, "sa": 95, "sd": 55, "sp": 45},
-		"w": 6,
-	},
-	"Magneton": {
-		"t1": "Electric",
-		"t2": "Steel",
-		"gender": "genderless",
-		"bs": {"hp": 50, "at": 60, "df": 95, "sa": 120, "sd": 70, "sp": 70},
-		"w": 60.0,
-	},
-	"Farfetch\u2019d": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 52, "at": 90, "df": 55, "sa": 58, "sd": 62, "sp": 60},
-		"w": 15.0,
-	},
-	"Doduo": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 35, "at": 85, "df": 45, "sa": 35, "sd": 35, "sp": 75},
-		"w": 39.2,
-	},
-	"Dodrio": {
-		"t1": "Normal",
-		"t2": "Flying",
-		"bs": {"hp": 60, "at": 110, "df": 70, "sa": 60, "sd": 60, "sp": 110},
-		"w": 85.2,
-	},
-	"Seel": {
-		"t1": "Water",
-		"bs": {"hp": 65, "at": 45, "df": 55, "sa": 45, "sd": 70, "sp": 45},
-		"w": 90.0,
-	},
-	"Dewgong": {
-		"t1": "Water",
-		"t2": "Ice",
-		"bs": {"hp": 90, "at": 70, "df": 80, "sa": 70, "sd": 95, "sp": 70},
-		"w": 120.0,
-	},
-	"Grimer": {
-		"t1": "Poison",
-		"bs": {"hp": 80, "at": 80, "df": 50, "sa": 40, "sd": 50, "sp": 25},
-		"w": 30.0,
-		"formes": ["Grimer", "Grimer-Alola"],
-	},
-	"Grimer-Alola": {
-		"isAlternateForme": true,
-		"t1": "Poison",
-		"t2": "Dark",
-		"bs": {"hp": 80, "at": 80, "df": 50, "sa": 40, "sd": 50, "sp": 25},
-		"w": 42.0,
-	},
-	"Muk": {
-		"t1": "Poison",
-		"bs": {"hp": 105, "at": 105, "df": 75, "sa": 65, "sd": 100, "sp": 50},
-		"w": 30.0,
-		"formes": ["Muk", "Muk-Alola"],
-	},
-	"Muk-Alola": {
-		"isAlternateForme": true,
-		"t1": "Poison",
-		"t2": "Dark",
-		"bs": {"hp": 105, "at": 105, "df": 75, "sa": 65, "sd": 100, "sp": 50},
-		"w": 52.0,
-	},
-	"Shellder": {
-		"t1": "Water",
-		"bs": {"hp": 30, "at": 65, "df": 100, "sa": 45, "sd": 25, "sp": 40},
-		"w": 4,
-	},
-	"Cloyster": {
-		"t1": "Water",
-		"t2": "Ice",
-		"bs": {"hp": 50, "at": 95, "df": 180, "sa": 85, "sd": 45, "sp": 70},
-		"w": 132.5,
-	},
-	"Gastly": {
-		"t1": "Ghost",
-		"t2": "Poison",
-		"bs": {"hp": 30, "at": 35, "df": 30, "sa": 100, "sd": 35, "sp": 80},
-		"w": 0.1,
-	},
-	"Haunter": {
-		"t1": "Ghost",
-		"t2": "Poison",
-		"bs": {"hp": 45, "at": 50, "df": 45, "sa": 115, "sd": 55, "sp": 95},
-		"w": 0.1,
-	},
-	"Gengar": {
-		"t1": "Ghost",
-		"t2": "Poison",
-		"bs": {"hp": 60, "at": 65, "df": 60, "sa": 130, "sd": 75, "sp": 110},
-		"w": 40.5,
-		"formes": ["Gengar", "Gengar-Mega"],
-	},
-	"Gengar-Mega": {
-		"isAlternateForme": true,
-		"t1": "Ghost",
-		"t2": "Poison",
-		"bs": {"hp": 60, "at": 65, "df": 80, "sa": 170, "sd": 95, "sp": 130},
-		"w": 40.5,
-	},
-	"Onix": {
-		"t1": "Rock",
-		"t2": "Ground",
-		"bs": {"hp": 35, "at": 45, "df": 160, "sa": 30, "sd": 45, "sp": 70},
-		"w": 210.0,
-	},
-	"Drowzee": {
-		"t1": "Psychic",
-		"bs": {"hp": 60, "at": 48, "df": 45, "sa": 43, "sd": 90, "sp": 42},
-		"w": 32.4,
-	},
-	"Hypno": {
-		"t1": "Psychic",
-		"bs": {"hp": 85, "at": 73, "df": 70, "sa": 73, "sd": 115, "sp": 67},
-		"w": 75.6,
-	},
-	"Krabby": {
-		"t1": "Water",
-		"bs": {"hp": 30, "at": 105, "df": 90, "sa": 25, "sd": 25, "sp": 50},
-		"w": 6.5,
-	},
-	"Kingler": {
-		"t1": "Water",
-		"bs": {"hp": 55, "at": 130, "df": 115, "sa": 50, "sd": 50, "sp": 75},
-		"w": 60.0,
-	},
-	"Voltorb": {
-		"t1": "Electric",
-		"gender": "genderless",
-		"bs": {"hp": 40, "at": 30, "df": 50, "sa": 55, "sd": 55, "sp": 100},
-		"w": 10.4,
-	},
-	"Electrode": {
-		"t1": "Electric",
-		"gender": "genderless",
-		"bs": {"hp": 60, "at": 50, "df": 70, "sa": 80, "sd": 80, "sp": 150},
-		"w": 66.6,
-	},
-	"Exeggcute": {
-		"t1": "Grass",
-		"t2": "Psychic",
-		"bs": {"hp": 60, "at": 40, "df": 80, "sa": 60, "sd": 45, "sp": 40},
-		"w": 2.5,
-	},
-	"Exeggutor": {
-		"t1": "Grass",
-		"t2": "Psychic",
-		"bs": {"hp": 95, "at": 95, "df": 85, "sa": 125, "sd": 75, "sp": 55},
-		"w": 120.0,
-		"formes": ["Exeggutor", "Exeggutor-Alola"],
-	},
-	"Exeggutor-Alola": {
-		"isAlternateForme": true,
-		"t1": "Grass",
-		"t2": "Dragon",
-		"bs": {"hp": 95, "at": 105, "df": 85, "sa": 125, "sd": 75, "sp": 45},
-		"w": 415.6,
-	},
-	"Cubone": {
-		"t1": "Ground",
-		"bs": {"hp": 50, "at": 50, "df": 95, "sa": 40, "sd": 50, "sp": 35},
-		"w": 6.5,
-	},
-	"Marowak": {
-		"t1": "Ground",
-		"bs": {"hp": 60, "at": 80, "df": 110, "sa": 50, "sd": 80, "sp": 45},
-		"w": 45.0,
-		"formes": ["Marowak", "Marowak-Alola"],
-	},
-	"Marowak-Alola": {
-		"isAlternateForme": true,
+	"Blacephalon": {
 		"t1": "Fire",
 		"t2": "Ghost",
-		"bs": {"hp": 60, "at": 80, "df": 110, "sa": 50, "sd": 80, "sp": 45},
-		"w": 34.0,
+		"bs": {
+			"hp": 53,
+			"at": 127,
+			"df": 53,
+			"sa": 151,
+			"sd": 79,
+			"sp": 107
+		},
+		"w": 13.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
 	},
-	"Hitmonlee": {
-		"t1": "Fighting",
-		"bs": {"hp": 50, "at": 120, "df": 53, "sa": 35, "sd": 110, "sp": 87},
-		"w": 49.8,
-	},
-	"Hitmonchan": {
-		"t1": "Fighting",
-		"bs": {"hp": 50, "at": 105, "df": 79, "sa": 35, "sd": 110, "sp": 76},
-		"w": 50.2,
-	},
-	"Lickitung": {
-		"t1": "Normal",
-		"bs": {"hp": 90, "at": 55, "df": 75, "sa": 60, "sd": 75, "sp": 30},
-		"w": 65.5,
-	},
-	"Koffing": {
-		"t1": "Poison",
-		"bs": {"hp": 40, "at": 65, "df": 95, "sa": 60, "sd": 45, "sp": 35},
-		"w": 1,
-	},
-	"Weezing": {
-		"t1": "Poison",
-		"bs": {"hp": 65, "at": 90, "df": 120, "sa": 85, "sd": 70, "sp": 60},
-		"w": 9.5,
-	},
-	"Rhyhorn": {
-		"t1": "Ground",
-		"t2": "Rock",
-		"bs": {"hp": 80, "at": 85, "df": 95, "sa": 30, "sd": 30, "sp": 25},
-		"w": 115.0,
-	},
-	"Rhydon": {
-		"t1": "Ground",
-		"t2": "Rock",
-		"bs": {"hp": 105, "at": 130, "df": 120, "sa": 45, "sd": 45, "sp": 40},
-		"w": 120.0,
-	},
-	"Chansey": {
-		"t1": "Normal",
-		"bs": {"hp": 250, "at": 5, "df": 5, "sa": 35, "sd": 105, "sp": 50},
-		"w": 34.6,
-	},
-	"Tangela": {
+	"Bounsweet": {
 		"t1": "Grass",
-		"bs": {"hp": 65, "at": 55, "df": 115, "sa": 100, "sd": 40, "sp": 60},
-		"w": 35.0,
+		"bs": {
+			"hp": 42,
+			"at": 30,
+			"df": 38,
+			"sa": 30,
+			"sd": 38,
+			"sp": 32
+		},
+		"w": 3.2,
+		"canEvolve": true
 	},
-	"Kangaskhan": {
-		"t1": "Normal",
-		"bs": {"hp": 105, "at": 95, "df": 80, "sa": 40, "sd": 80, "sp": 90},
-		"w": 80.0,
-		"formes": ["Kangaskhan", "Kangaskhan-Mega"],
-	},
-	"Kangaskhan-Mega": {
-		"isAlternateForme": true,
-		"t1": "Normal",
-		"bs": {"hp": 105, "at": 125, "df": 100, "sa": 60, "sd": 100, "sp": 100},
-		"w": 100.0,
-	},
-	"Horsea": {
+	"Brionne": {
 		"t1": "Water",
-		"bs": {"hp": 30, "at": 40, "df": 70, "sa": 70, "sd": 25, "sp": 60},
-		"w": 8,
+		"bs": {
+			"hp": 60,
+			"at": 69,
+			"df": 69,
+			"sa": 91,
+			"sd": 81,
+			"sp": 50
+		},
+		"w": 17.5,
+		"canEvolve": true
 	},
-	"Seadra": {
-		"t1": "Water",
-		"bs": {"hp": 55, "at": 65, "df": 95, "sa": 95, "sd": 45, "sp": 85},
-		"w": 25.0,
-	},
-	"Goldeen": {
-		"t1": "Water",
-		"bs": {"hp": 45, "at": 67, "df": 60, "sa": 35, "sd": 50, "sp": 63},
-		"w": 15.0,
-	},
-	"Seaking": {
-		"t1": "Water",
-		"bs": {"hp": 80, "at": 92, "df": 65, "sa": 65, "sd": 80, "sp": 68},
-		"w": 39.0,
-	},
-	"Staryu": {
-		"t1": "Water",
-		"gender": "genderless",
-		"bs": {"hp": 30, "at": 45, "df": 55, "sa": 70, "sd": 55, "sp": 85},
-		"w": 34.5,
-	},
-	"Starmie": {
+	"Bruxish": {
 		"t1": "Water",
 		"t2": "Psychic",
-		"gender": "genderless",
-		"bs": {"hp": 60, "at": 75, "df": 85, "sa": 100, "sd": 85, "sp": 115},
-		"w": 80.0,
+		"bs": {
+			"hp": 68,
+			"at": 105,
+			"df": 70,
+			"sa": 70,
+			"sd": 70,
+			"sp": 92
+		},
+		"w": 19.0,
 	},
-	"Mr. Mime": {
+	"Buzzwole": {
+		"t1": "Bug",
+		"t2": "Fighting",
+		"bs": {
+			"hp": 107,
+			"at": 139,
+			"df": 139,
+			"sa": 53,
+			"sd": 53,
+			"sp": 79
+		},
+		"w": 333.6,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Celesteela": {
+		"t1": "Steel",
+		"t2": "Flying",
+		"bs": {
+			"hp": 97,
+			"at": 101,
+			"df": 103,
+			"sa": 107,
+			"sd": 101,
+			"sp": 61
+		},
+		"w": 999.9,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Charjabug": {
+		"t1": "Bug",
+		"t2": "Electric",
+		"bs": {
+			"hp": 57,
+			"at": 82,
+			"df": 95,
+			"sa": 55,
+			"sd": 75,
+			"sp": 36
+		},
+		"w": 10.5,
+		"canEvolve": true
+	},
+	"Comfey": {
+		"t1": "Fairy",
+		"bs": {
+			"hp": 51,
+			"at": 52,
+			"df": 90,
+			"sa": 82,
+			"sd": 110,
+			"sp": 100
+		},
+		"w": 0.3,
+	},
+	"Cosmoem": {
 		"t1": "Psychic",
+		"bs": {
+			"hp": 43,
+			"at": 29,
+			"df": 131,
+			"sa": 29,
+			"sd": 131,
+			"sp": 37
+		},
+		"w": 999.9,
+		"canEvolve": true,
+		"gender": "genderless"
+	},
+	"Cosmog": {
+		"t1": "Psychic",
+		"bs": {
+			"hp": 43,
+			"at": 29,
+			"df": 31,
+			"sa": 29,
+			"sd": 31,
+			"sp": 37
+		},
+		"w": 0.1,
+		"canEvolve": true,
+		"gender": "genderless"
+	},
+	"Crabominable": {
+		"t1": "Fighting",
+		"t2": "Ice",
+		"bs": {
+			"hp": 97,
+			"at": 132,
+			"df": 77,
+			"sa": 62,
+			"sd": 67,
+			"sp": 43
+		},
+		"w": 180.0
+	},
+	"Crabrawler": {
+		"t1": "Fighting",
+		"bs": {
+			"hp": 47,
+			"at": 82,
+			"df": 57,
+			"sa": 42,
+			"sd": 47,
+			"sp": 63
+		},
+		"w": 7.0,
+		"canEvolve": true
+	},
+	"Cutiefly": {
+		"t1": "Bug",
 		"t2": "Fairy",
-		"bs": {"hp": 40, "at": 45, "df": 65, "sa": 100, "sd": 120, "sp": 90},
-		"w": 54.5,
+		"bs": {
+			"hp": 40,
+			"at": 45,
+			"df": 40,
+			"sa": 55,
+			"sd": 40,
+			"sp": 84
+		},
+		"w": 0.2
 	},
-	"Scyther": {
-		"t1": "Bug",
+	"Dartrix": {
+		"t1": "Grass",
 		"t2": "Flying",
-		"bs": {"hp": 70, "at": 110, "df": 80, "sa": 55, "sd": 80, "sp": 105},
-		"w": 56.0,
+		"bs": {
+			"hp": 78,
+			"at": 75,
+			"df": 75,
+			"sa": 70,
+			"sd": 70,
+			"sp": 52
+		},
+		"w": 16.0,
+		"canEvolve": true
 	},
-	"Jynx": {
-		"t1": "Ice",
-		"t2": "Psychic",
-		"bs": {"hp": 65, "at": 50, "df": 35, "sa": 115, "sd": 95, "sp": 95},
-		"w": 40.6,
+	"Decidueye": {
+		"t1": "Grass",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 78,
+			"at": 107,
+			"df": 75,
+			"sa": 100,
+			"sd": 100,
+			"sp": 70
+		},
+		"w": 36.6,
+		"canEvolve": true
 	},
-	"Electabuzz": {
-		"t1": "Electric",
-		"bs": {"hp": 65, "at": 83, "df": 57, "sa": 95, "sd": 85, "sp": 105},
-		"w": 30.0,
+	"Dewpider": {
+		"t1": "Water",
+		"t2": "Bug",
+		"bs": {
+			"hp": 38,
+			"at": 40,
+			"df": 52,
+			"sa": 40,
+			"sd": 72,
+			"sp": 27
+		},
+		"w": 4.0,
+		"canEvolve": true
 	},
-	"Magmar": {
-		"t1": "Fire",
-		"bs": {"hp": 65, "at": 95, "df": 57, "sa": 100, "sd": 85, "sp": 93},
-		"w": 44.5,
+	"Dhelmise": {
+		"t1": "Ghost",
+		"t2": "Grass",
+		"bs": {
+			"hp": 70,
+			"at": 131,
+			"df": 100,
+			"sa": 86,
+			"sd": 90,
+			"sp": 40
+		},
+		"w": 210.0,
+		"gender": "genderless"
 	},
-	"Pinsir": {
-		"t1": "Bug",
-		"bs": {"hp": 65, "at": 125, "df": 100, "sa": 55, "sd": 70, "sp": 85},
-		"w": 55.0,
-		"formes": ["Pinsir", "Pinsir-Mega"],
-	},
-	"Pinsir-Mega": {
-		"isAlternateForme": true,
-		"t1": "Bug",
-		"t2": "Flying",
-		"bs": {"hp": 65, "at": 155, "df": 120, "sa": 65, "sd": 90, "sp": 105},
-		"w": 59.0,
-	},
-	"Tauros": {
+	"Drampa": {
 		"t1": "Normal",
-		"bs": {"hp": 75, "at": 100, "df": 95, "sa": 40, "sd": 70, "sp": 110},
-		"w": 88.4,
+		"t2": "Dragon",
+		"bs": {
+			"hp": 78,
+			"at": 60,
+			"df": 85,
+			"sa": 135,
+			"sd": 91,
+			"sp": 36
+		},
+		"w": 185.0,
 	},
-	"Magikarp": {
-		"t1": "Water",
-		"bs": {"hp": 20, "at": 10, "df": 55, "sa": 15, "sd": 20, "sp": 80},
-		"w": 10.0,
-	},
-	"Gyarados": {
-		"t1": "Water",
-		"t2": "Flying",
-		"bs": {"hp": 95, "at": 125, "df": 79, "sa": 60, "sd": 100, "sp": 81},
-		"w": 235.0,
-		"formes": ["Gyarados", "Gyarados-Mega"],
-	},
-	"Gyarados-Mega": {
+	"Diglett-Alola": {
+		"t1": "Ground",
+		"t2": "Steel",
+		"bs": {
+			"hp": 10,
+			"at": 55,
+			"df": 30,
+			"sa": 35,
+			"sd": 45,
+			"sp": 90
+		},
+		"w": 1.0,
 		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Dugtrio-Alola": {
+		"t1": "Ground",
+		"t2": "Steel",
+		"bs": {
+			"hp": 35,
+			"at": 100,
+			"df": 60,
+			"sa": 50,
+			"sd": 70,
+			"sp": 110
+		},
+		"w": 66.6,
+		"isAlternateForme": true
+	},
+	"Exeggutor-Alola": {
+		"t1": "Grass",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 95,
+			"at": 105,
+			"df": 85,
+			"sa": 125,
+			"sd": 75,
+			"sp": 45
+		},
+		"w": 415.6,
+		"isAlternateForme": true
+	},
+	"Fomantis": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 40,
+			"at": 55,
+			"df": 35,
+			"sa": 50,
+			"sd": 35,
+			"sp": 35
+		},
+		"w": 1.5,
+		"canEvolve": true
+	},
+	"Geodude-Alola": {
+		"t1": "Rock",
+		"t2": "Electric",
+		"bs": {
+			"hp": 40,
+			"at": 80,
+			"df": 100,
+			"sa": 30,
+			"sd": 30,
+			"sp": 20
+		},
+		"w": 20.3,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Golem-Alola": {
+		"t1": "Rock",
+		"t2": "Electric",
+		"bs": {
+			"hp": 80,
+			"at": 120,
+			"df": 130,
+			"sa": 55,
+			"sd": 65,
+			"sp": 45
+		},
+		"w": 316.0,
+		"ab": "Galvanize",
+		"isAlternateForme": true
+	},
+	"Golisopod": {
+		"t1": "Bug",
+		"t2": "Water",
+		"bs": {
+			"hp": 75,
+			"at": 125,
+			"df": 140,
+			"sa": 60,
+			"sd": 90,
+			"sp": 40
+		},
+		"w": 108.0
+	},
+	"Graveler-Alola": {
+		"t1": "Rock",
+		"t2": "Electric",
+		"bs": {
+			"hp": 55,
+			"at": 95,
+			"df": 115,
+			"sa": 45,
+			"sd": 45,
+			"sp": 35
+		},
+		"w": 110.0,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Grimer-Alola": {
+		"t1": "Poison",
+		"t2": "Dark",
+		"bs": {
+			"hp": 80,
+			"at": 80,
+			"df": 50,
+			"sa": 40,
+			"sd": 50,
+			"sp": 25
+		},
+		"w": 42.0,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Greninja-Ash": {
 		"t1": "Water",
 		"t2": "Dark",
-		"bs": {"hp": 95, "at": 155, "df": 109, "sa": 70, "sd": 130, "sp": 81},
-		"w": 305.0,
+		"bs": {
+			"hp": 72,
+			"at": 145,
+			"df": 67,
+			"sa": 153,
+			"sd": 71,
+			"sp": 132
+		},
+		"w": 40.0,
+		"ab": "Battle Bond",
+		"isAlternateForme": true
 	},
-	"Lapras": {
-		"t1": "Water",
-		"t2": "Ice",
-		"bs": {"hp": 130, "at": 85, "df": 80, "sa": 85, "sd": 95, "sp": 60},
-		"w": 220.0,
+	"Grubbin": {
+		"t1": "Bug",
+		"bs": {
+			"hp": 47,
+			"at": 62,
+			"df": 45,
+			"sa": 55,
+			"sd": 45,
+			"sp": 46
+		},
+		"w": 4.4,
+		"canEvolve": true
 	},
-	"Ditto": {
+	"Gumshoos": {
 		"t1": "Normal",
-		"gender": "genderless",
-		"bs": {"hp": 48, "at": 48, "df": 48, "sa": 48, "sd": 48, "sp": 48},
-		"w": 4,
+		"bs": {
+			"hp": 88,
+			"at": 110,
+			"df": 60,
+			"sa": 55,
+			"sd": 60,
+			"sp": 45
+		},
+		"w": 14.2,
+		"formes": ["Gumshoos", "Gumshoos-Totem"]
 	},
-	"Eevee": {
+	"Gumshoos-Totem": {
 		"t1": "Normal",
-		"bs": {"hp": 55, "at": 55, "df": 50, "sa": 45, "sd": 65, "sp": 55},
-		"w": 6.5,
+		"bs": {
+			"hp": 88,
+			"at": 110,
+			"df": 60,
+			"sa": 55,
+			"sd": 60,
+			"sp": 45
+		},
+		"w": 60.0,
+		"isAlternateForme": true
 	},
-	"Eevee-Starter": {
-		"t1": "Normal",
-		"bs": {"hp": 65, "at": 75, "df": 70, "sa": 65, "sd": 85, "sp": 75},
-		"w": 6.5,
+	"Guzzlord": {
+		"t1": "Dark",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 223,
+			"at": 101,
+			"df": 53,
+			"sa": 97,
+			"sd": 53,
+			"sp": 43
+		},
+		"w": 888.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
 	},
-	"Vaporeon": {
-		"t1": "Water",
-		"bs": {"hp": 130, "at": 65, "df": 60, "sa": 110, "sd": 95, "sp": 65},
-		"w": 29.0,
+	"Hakamo-o": {
+		"t1": "Dragon",
+		"t2": "Fighting",
+		"bs": {
+			"hp": 55,
+			"at": 75,
+			"df": 90,
+			"sa": 65,
+			"sd": 70,
+			"sp": 65
+		},
+		"w": 47.0,
+		"canEvolve": true
 	},
-	"Jolteon": {
-		"t1": "Electric",
-		"bs": {"hp": 65, "at": 65, "df": 60, "sa": 110, "sd": 95, "sp": 130},
-		"w": 24.5,
-	},
-	"Flareon": {
+	"Incineroar": {
 		"t1": "Fire",
-		"bs": {"hp": 65, "at": 130, "df": 60, "sa": 95, "sd": 110, "sp": 65},
-		"w": 25.0,
+		"t2": "Dark",
+		"bs": {
+			"hp": 95,
+			"at": 115,
+			"df": 90,
+			"sa": 80,
+			"sd": 90,
+			"sp": 60
+		},
+		"w": 83.0
 	},
-	"Porygon": {
+	"Jangmo-o": {
+		"t1": "Dragon",
+		"bs": {
+			"hp": 45,
+			"at": 55,
+			"df": 65,
+			"sa": 45,
+			"sd": 45,
+			"sp": 45
+		},
+		"w": 29.7,
+		"canEvolve": true
+	},
+	"Kartana": {
+		"t1": "Grass",
+		"t2": "Steel",
+		"bs": {
+			"hp": 59,
+			"at": 181,
+			"df": 131,
+			"sa": 59,
+			"sd": 31,
+			"sp": 109
+		},
+		"w": 0.1,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Komala": {
 		"t1": "Normal",
-		"gender": "genderless",
-		"bs": {"hp": 65, "at": 60, "df": 70, "sa": 85, "sd": 75, "sp": 40},
-		"w": 36.5,
+		"bs": {
+			"hp": 65,
+			"at": 115,
+			"df": 65,
+			"sa": 75,
+			"sd": 95,
+			"sp": 65
+		},
+		"w": 19.9,
 	},
-	"Omanyte": {
+	"Kommo-o": {
+		"t1": "Dragon",
+		"t2": "Fighting",
+		"bs": {
+			"hp": 75,
+			"at": 110,
+			"df": 125,
+			"sa": 100,
+			"sd": 105,
+			"sp": 85
+		},
+		"w": 78.2,
+		"formes": ["Kommo-o", "Kommo-o-Totem"]
+	},
+	"Kommo-o-Totem": {
+		"t1": "Dragon",
+		"t2": "Fighting",
+		"bs": {
+			"hp": 75,
+			"at": 110,
+			"df": 125,
+			"sa": 100,
+			"sd": 105,
+			"sp": 85
+		},
+		"w": 207.5,
+		"ab": "Overcoat",
+		"isAlternateForme": true
+	},
+	"Litten": {
+		"t1": "Fire",
+		"bs": {
+			"hp": 45,
+			"at": 65,
+			"df": 40,
+			"sa": 60,
+			"sd": 40,
+			"sp": 70
+		},
+		"w": 4.3,
+		"canEvolve": true
+	},
+	"Lunala": {
+		"t1": "Psychic",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 137,
+			"at": 113,
+			"df": 89,
+			"sa": 137,
+			"sd": 107,
+			"sp": 97
+		},
+		"w": 120.0,
+		"ab": "Shadow Shield",
+		"gender": "genderless"
+	},
+	"Lurantis": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 70,
+			"at": 105,
+			"df": 90,
+			"sa": 80,
+			"sd": 90,
+			"sp": 45
+		},
+		"w": 19.5,
+		"formes": ["Lurantis", "Lurantis-Totem"]
+	},
+	"Lurantis-Totem": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 70,
+			"at": 105,
+			"df": 90,
+			"sa": 80,
+			"sd": 90,
+			"sp": 45
+		},
+		"w": 58.0,
+		"ab": "Leaf Guard",
+		"isAlternateForme": true
+	},
+	"Lycanroc": {
 		"t1": "Rock",
+		"bs": {
+			"hp": 75,
+			"at": 115,
+			"df": 65,
+			"sa": 55,
+			"sd": 65,
+			"sp": 112
+		},
+		"w": 25.0,
+		"formes": ["Lycanroc", "Lycanoc-Dusk", "Lycanroc-Midnight"]
+	},
+	"Lycanroc-Dusk": {
+		"t1": "Rock",
+		"bs": {
+			"hp": 75,
+			"at": 117,
+			"df": 65,
+			"sa": 55,
+			"sd": 65,
+			"sp": 110
+		},
+		"w": 25.0,
+		"ab": "Tough Claws",
+		"isAlternateForme": true
+	},
+	"Lycanroc-Midnight": {
+		"t1": "Rock",
+		"bs": {
+			"hp": 85,
+			"at": 115,
+			"df": 75,
+			"sa": 55,
+			"sd": 75,
+			"sp": 82
+		},
+		"w": 25.0,
+		"isAlternateForme": true
+	},
+	"Magearna": {
+		"t1": "Steel",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 80,
+			"at": 95,
+			"df": 115,
+			"sa": 130,
+			"sd": 115,
+			"sp": 65
+		},
+		"w": 80.5,
+		"gender": "genderless"
+	},
+	"Mareanie": {
+		"t1": "Poison",
 		"t2": "Water",
-		"bs": {"hp": 35, "at": 40, "df": 100, "sa": 90, "sd": 55, "sp": 35},
+		"bs": {
+			"hp": 50,
+			"at": 53,
+			"df": 62,
+			"sa": 43,
+			"sd": 52,
+			"sp": 45
+		},
+		"w": 8.0,
+		"canEvolve": true
+	},
+	"Marowak-Alola": {
+		"t1": "Fire",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 60,
+			"at": 80,
+			"df": 110,
+			"sa": 50,
+			"sd": 80,
+			"sp": 45
+		},
+		"w": 34.0
+	},
+	"Marowak-Alola-Totem": {
+		"t1": "Fire",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 60,
+			"at": 80,
+			"df": 110,
+			"sa": 50,
+			"sd": 80,
+			"sp": 45
+		},
+		"w": 98.0,
+		"ab": "Rock Head",
+		"isAlternateForme": true
+	},
+	"Marshadow": {
+		"t1": "Fighting",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 90,
+			"at": 125,
+			"df": 80,
+			"sa": 90,
+			"sd": 90,
+			"sp": 125
+		},
+		"w": 22.2,
+		"gender": "genderless"
+	},
+	"Meowth-Alola": {
+		"t1": "Dark",
+		"bs": {
+			"hp": 40,
+			"at": 35,
+			"df": 35,
+			"sa": 50,
+			"sd": 40,
+			"sp": 90
+		},
+		"w": 4.2,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Mimikyu": {
+		"t1": "Ghost",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 55,
+			"at": 90,
+			"df": 80,
+			"sa": 50,
+			"sd": 105,
+			"sp": 96
+		},
+		"w": 0.7,
+		"formes": ["Mimikyu", "Mimikyu-Totem"]
+	},
+	"Mimikyu-Totem": {
+		"t1": "Ghost",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 55,
+			"at": 90,
+			"df": 80,
+			"sa": 50,
+			"sd": 105,
+			"sp": 96
+		},
+		"w": 2.8,
+		"isAlternateForme": true
+	},
+	"Minior": {
+		"t1": "Rock",
+		"t2": "Flying",
+		"bs": {
+			"hp": 60,
+			"at": 100,
+			"df": 60,
+			"sa": 100,
+			"sd": 60,
+			"sp": 120
+		},
+		"w": 0.3,
+		"formes": ["Minior", "Minior-Meteor"],
+		"gender": "genderless"
+	},
+	"Minior-Meteor": {
+		"t1": "Rock",
+		"t2": "Flying",
+		"bs": {
+			"hp": 60,
+			"at": 60,
+			"df": 100,
+			"sa": 60,
+			"sd": 100,
+			"sp": 60
+		},
+		"w": 40.0,
+		"isAlternateForme": true
+	},
+	"Morelull": {
+		"t1": "Grass",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 40,
+			"at": 35,
+			"df": 55,
+			"sa": 65,
+			"sd": 75,
+			"sp": 15
+		},
+		"w": 1.5,
+		"canEvolve": true
+	},
+	"Mudbray": {
+		"t1": "Ground",
+		"bs": {
+			"hp": 70,
+			"at": 100,
+			"df": 70,
+			"sa": 45,
+			"sd": 55,
+			"sp": 45
+		},
+		"w": 110.0,
+		"canEvolve": true
+	},
+	"Mudsdale": {
+		"t1": "Ground",
+		"bs": {
+			"hp": 100,
+			"at": 125,
+			"df": 100,
+			"sa": 55,
+			"sd": 85,
+			"sp": 35
+		},
+		"w": 920.0,
+	},
+	"Muk-Alola": {
+		"t1": "Poison",
+		"t2": "Dark",
+		"bs": {
+			"hp": 105,
+			"at": 105,
+			"df": 75,
+			"sa": 65,
+			"sd": 100,
+			"sp": 50
+		},
+		"w": 52.0,
+		"isAlternateForme": true
+	},
+	"Naganadel": {
+		"t1": "Poison",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 73,
+			"at": 73,
+			"df": 73,
+			"sa": 127,
+			"sd": 73,
+			"sp": 121
+		},
+		"w": 150.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Necrozma": {
+		"t1": "Psychic",
+		"bs": {
+			"hp": 97,
+			"at": 107,
+			"df": 101,
+			"sa": 127,
+			"sd": 89,
+			"sp": 79
+		},
+		"w": 230.0,
+		"ab": "Prism Armor",
+		"formes": ["Necrozma", "Necrozma-Dawn-Wings", "Necrozma-Dusk-Mane", "Necrozma-Ultra"],
+		"gender": "genderless"
+	},
+	"Necrozma-Dawn-Wings": {
+		"t1": "Psychic",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 97,
+			"at": 113,
+			"df": 109,
+			"sa": 157,
+			"sd": 127,
+			"sp": 77
+		},
+		"w": 350.0,
+		"ab": "Prism Armor",
+		"isAlternateForme": true,
+		"gender": "genderless"
+	},
+	"Necrozma-Dusk-Mane": {
+		"t1": "Psychic",
+		"t2": "Steel",
+		"bs": {
+			"hp": 97,
+			"at": 157,
+			"df": 127,
+			"sa": 113,
+			"sd": 109,
+			"sp": 77
+		},
+		"w": 460.0,
+		"ab": "Prism Armor",
+		"isAlternateForme": true,
+		"gender": "genderless"
+	},
+	"Necrozma-Ultra": {
+		"t1": "Psychic",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 97,
+			"at": 167,
+			"df": 97,
+			"sa": 167,
+			"sd": 97,
+			"sp": 129
+		},
+		"w": 230.0,
+		"ab": "Neuroforce",
+		"isAlternateForme": true,
+		"gender": "genderless"
+	},
+	"Nihilego": {
+		"t1": "Rock",
+		"t2": "Poison",
+		"bs": {
+			"hp": 109,
+			"at": 53,
+			"df": 47,
+			"sa": 127,
+			"sd": 131,
+			"sp": 103
+		},
+		"w": 55.5,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Ninetales-Alola": {
+		"t1": "Ice",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 73,
+			"at": 67,
+			"df": 75,
+			"sa": 81,
+			"sd": 100,
+			"sp": 109
+		},
+		"w": 19.9,
+		"ab": "Snow Warning",
+		"isAlternateForme": true
+	},
+	"Oranguru": {
+		"t1": "Normal",
+		"t2": "Psychic",
+		"bs": {
+			"hp": 90,
+			"at": 60,
+			"df": 80,
+			"sa": 90,
+			"sd": 110,
+			"sp": 60
+		},
+		"w": 76.0,
+		"canEvolve": true
+	},
+	"Oricorio": {
+		"t1": "Fire",
+		"t2": "Flying",
+		"bs": {
+			"hp": 75,
+			"at": 70,
+			"df": 70,
+			"sa": 98,
+			"sd": 70,
+			"sp": 93
+		},
+		"w": 3.4,
+		"ab": "Dancer",
+		"formes": ["Oricorio", "Oricorio-Pa'u", "Oricorio-Pom-Pom", "Oricorio-Sensu"],
+	},
+	"Oricorio-Pa'u": {
+		"t1": "Psychic",
+		"t2": "Flying",
+		"bs": {
+			"hp": 75,
+			"at": 70,
+			"df": 70,
+			"sa": 98,
+			"sd": 70,
+			"sp": 93
+		},
+		"w": 3.4,
+		"ab": "Dancer",
+		"isAlternateForme": true
+	},
+	"Oricorio-Pom-Pom": {
+		"t1": "Electric",
+		"t2": "Flying",
+		"bs": {
+			"hp": 75,
+			"at": 70,
+			"df": 70,
+			"sa": 98,
+			"sd": 70,
+			"sp": 93
+		},
+		"w": 3.4,
+		"ab": "Dancer",
+		"isAlternateForme": true
+	},
+	"Oricorio-Sensu": {
+		"t1": "Ghost",
+		"t2": "Flying",
+		"bs": {
+			"hp": 75,
+			"at": 70,
+			"df": 70,
+			"sa": 98,
+			"sd": 70,
+			"sp": 93
+		},
+		"w": 3.4,
+		"ab": "Dancer",
+		"isAlternateForme": true
+	},
+	"Pajantom": {
+		"t1": "Dragon",
+		"t2": "Ghost",
+		"bs": {
+			"hp": 84,
+			"at": 133,
+			"df": 71,
+			"sa": 51,
+			"sd": 111,
+			"sp": 101
+		},
+		"w": 3.1,
+		"ab": "Comatose"
+	},
+	"Palossand": {
+		"t1": "Ghost",
+		"t2": "Ground",
+		"bs": {
+			"hp": 85,
+			"at": 75,
+			"df": 110,
+			"sa": 100,
+			"sd": 75,
+			"sp": 35
+		},
+		"w": 250.0,
+	},
+	"Passimian": {
+		"t1": "Fighting",
+		"bs": {
+			"hp": 100,
+			"at": 120,
+			"df": 90,
+			"sa": 40,
+			"sd": 60,
+			"sp": 80
+		},
+		"w": 82.8,
+	},
+	"Persian-Alola": {
+		"t1": "Dark",
+		"bs": {
+			"hp": 65,
+			"at": 60,
+			"df": 60,
+			"sa": 75,
+			"sd": 65,
+			"sp": 115
+		},
+		"w": 33.0,
+		"isAlternateForme": true
+	},
+	"Pheromosa": {
+		"t1": "Bug",
+		"t2": "Fighting",
+		"bs": {
+			"hp": 71,
+			"at": 137,
+			"df": 37,
+			"sa": 137,
+			"sd": 37,
+			"sp": 151
+		},
+		"w": 25.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Pikipek": {
+		"t1": "Normal",
+		"t2": "Flying",
+		"bs": {
+			"hp": 35,
+			"at": 75,
+			"df": 30,
+			"sa": 30,
+			"sd": 30,
+			"sp": 65
+		},
+		"w": 1.2,
+		"canEvolve": true
+	},
+	"Poipole": {
+		"t1": "Poison",
+		"bs": {
+			"hp": 67,
+			"at": 73,
+			"df": 67,
+			"sa": 73,
+			"sd": 67,
+			"sp": 73
+		},
+		"w": 1.8,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Popplio": {
+		"t1": "Water",
+		"bs": {
+			"hp": 50,
+			"at": 54,
+			"df": 54,
+			"sa": 66,
+			"sd": 56,
+			"sp": 40
+		},
 		"w": 7.5,
+		"canEvolve": true
 	},
-	"Omastar": {
-		"t1": "Rock",
-		"t2": "Water",
-		"bs": {"hp": 70, "at": 60, "df": 125, "sa": 115, "sd": 70, "sp": 55},
-		"w": 35.0,
+	"Primarina": {
+		"t1": "Water",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 80,
+			"at": 74,
+			"df": 74,
+			"sa": 126,
+			"sd": 116,
+			"sp": 60
+		},
+		"w": 44.0
 	},
-	"Kabuto": {
+	"Pyukumuku": {
+		"t1": "Water",
+		"bs": {
+			"hp": 55,
+			"at": 60,
+			"df": 130,
+			"sa": 30,
+			"sd": 130,
+			"sp": 5
+		},
+		"w": 1.2,
+	},
+	"Raichu-Alola": {
+		"t1": "Electric",
+		"t2": "Psychic",
+		"bs": {
+			"hp": 60,
+			"at": 85,
+			"df": 50,
+			"sa": 95,
+			"sd": 85,
+			"sp": 110
+		},
+		"w": 21.0,
+		"isAlternateForme": true
+	},
+	"Raticate-Alola": {
+		"t1": "Dark",
+		"t2": "Normal",
+		"bs": {
+			"hp": 75,
+			"at": 71,
+			"df": 70,
+			"sa": 40,
+			"sd": 80,
+			"sp": 77
+		},
+		"w": 25.5,
+		"isAlternateForme": true
+	},
+	"Raticate-Alola-Totem": {
+		"t1": "Dark",
+		"t2": "Normal",
+		"bs": {
+			"hp": 75,
+			"at": 71,
+			"df": 70,
+			"sa": 40,
+			"sd": 80,
+			"sp": 77
+		},
+		"w": 105.0,
+		"ab": "Thick Fat",
+		"isAlternateForme": true
+	},
+	"Rattata-Alola": {
+		"t1": "Dark",
+		"t2": "Normal",
+		"bs": {
+			"hp": 30,
+			"at": 56,
+			"df": 35,
+			"sa": 25,
+			"sd": 35,
+			"sp": 72
+		},
+		"w": 3.8,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Ribombee": {
+		"t1": "Bug",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 60,
+			"at": 55,
+			"df": 60,
+			"sa": 95,
+			"sd": 70,
+			"sp": 124
+		},
+		"w": 0.5,
+		"formes": ["Ribombee", "Ribombee-Totem"]
+	},
+	"Ribombee-Totem": {
+		"t1": "Bug",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 60,
+			"at": 55,
+			"df": 60,
+			"sa": 95,
+			"sd": 70,
+			"sp": 124
+		},
+		"w": 2.0,
+		"ab": "Sweet Veil",
+		"isAlternateForme": true
+	},
+	"Rockruff": {
 		"t1": "Rock",
-		"t2": "Water",
-		"bs": {"hp": 30, "at": 80, "df": 90, "sa": 55, "sd": 45, "sp": 55},
+		"bs": {
+			"hp": 45,
+			"at": 65,
+			"df": 40,
+			"sa": 30,
+			"sd": 40,
+			"sp": 60
+		},
+		"w": 9.2,
+		"canEvolve": true
+	},
+	"Rowlet": {
+		"t1": "Grass",
+		"t2": "Flying",
+		"bs": {
+			"hp": 68,
+			"at": 55,
+			"df": 55,
+			"sa": 50,
+			"sd": 50,
+			"sp": 42
+		},
+		"w": 1.5,
+		"canEvolve": true
+	},
+	"Salandit": {
+		"t1": "Poison",
+		"t2": "Fire",
+		"bs": {
+			"hp": 48,
+			"at": 44,
+			"df": 40,
+			"sa": 71,
+			"sd": 40,
+			"sp": 77
+		},
+		"w": 4.8,
+		"canEvolve": true
+	},
+	"Salazzle": {
+		"t1": "Poison",
+		"t2": "Fire",
+		"bs": {
+			"hp": 68,
+			"at": 64,
+			"df": 60,
+			"sa": 111,
+			"sd": 60,
+			"sp": 117
+		},
+		"w": 22.2,
+		"formes": ["Salazzle", "Salazzle-Totem"]
+	},
+	"Salazzle-Totem": {
+		"t1": "Poison",
+		"t2": "Fire",
+		"bs": {
+			"hp": 68,
+			"at": 64,
+			"df": 60,
+			"sa": 111,
+			"sd": 60,
+			"sp": 117
+		},
+		"w": 81.0,
+		"ab": "Corrosion",
+		"isAlternateForme": true
+	},
+	"Sandshrew-Alola": {
+		"t1": "Ice",
+		"t2": "Steel",
+		"bs": {
+			"hp": 50,
+			"at": 75,
+			"df": 90,
+			"sa": 10,
+			"sd": 35,
+			"sp": 40
+		},
+		"w": 40.0,
+		"isAlternateForme": true,
+		"canEvolve": true
+	},
+	"Sandslash-Alola": {
+		"t1": "Ice",
+		"t2": "Steel",
+		"bs": {
+			"hp": 75,
+			"at": 100,
+			"df": 120,
+			"sa": 25,
+			"sd": 65,
+			"sp": 65
+		},
+		"w": 55.0,
+		"isAlternateForme": true
+	},
+	"Sandygast": {
+		"t1": "Ghost",
+		"t2": "Ground",
+		"bs": {
+			"hp": 55,
+			"at": 55,
+			"df": 80,
+			"sa": 70,
+			"sd": 45,
+			"sp": 15
+		},
+		"w": 70.0,
+	},
+	"Shiinotic": {
+		"t1": "Grass",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 60,
+			"at": 45,
+			"df": 80,
+			"sa": 90,
+			"sd": 100,
+			"sp": 30
+		},
 		"w": 11.5,
 	},
-	"Kabutops": {
-		"t1": "Rock",
-		"t2": "Water",
-		"bs": {"hp": 60, "at": 115, "df": 105, "sa": 65, "sd": 70, "sp": 80},
-		"w": 40.5,
-	},
-	"Aerodactyl": {
-		"t1": "Rock",
-		"t2": "Flying",
-		"bs": {"hp": 80, "at": 105, "df": 65, "sa": 60, "sd": 75, "sp": 130},
-		"w": 59.0,
-		"formes": ["Aerodactyl", "Aerodactyl-Mega"],
-	},
-	"Aerodactyl-Mega": {
-		"isAlternateForme": true,
-		"t1": "Rock",
-		"t2": "Flying",
-		"bs": {"hp": 80, "at": 135, "df": 85, "sa": 70, "sd": 95, "sp": 150},
-		"w": 79.0,
-	},
-	"Snorlax": {
+	"Silvally": {
 		"t1": "Normal",
-		"bs": {"hp": 160, "at": 110, "df": 65, "sa": 65, "sd": 110, "sp": 30},
-		"w": 460.0,
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Articuno": {
-		"t1": "Ice",
-		"t2": "Flying",
-		"gender": "genderless",
-		"bs": {"hp": 90, "at": 85, "df": 100, "sa": 95, "sd": 125, "sp": 85},
-		"w": 55.4,
+	"Silvally-Bug": {
+		"t1": "Bug",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Zapdos": {
+	"Silvally-Dark": {
+		"t1": "Dark",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Dragon": {
+		"t1": "Dragon",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Electric": {
 		"t1": "Electric",
-		"t2": "Flying",
-		"gender": "genderless",
-		"bs": {"hp": 90, "at": 90, "df": 85, "sa": 125, "sd": 90, "sp": 100},
-		"w": 52.6,
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Moltres": {
+	"Silvally-Fairy": {
+		"t1": "Fairy",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Fighting": {
+		"t1": "Fighting",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Fire": {
 		"t1": "Fire",
-		"t2": "Flying",
-		"gender": "genderless",
-		"bs": {"hp": 90, "at": 100, "df": 90, "sa": 125, "sd": 85, "sp": 90},
-		"w": 60.0,
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Dratini": {
-		"t1": "Dragon",
-		"bs": {"hp": 41, "at": 64, "df": 45, "sa": 50, "sd": 50, "sp": 50},
-		"w": 3.3,
+	"Silvally-Flying": {
+		"t1": "Flying",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Dragonair": {
-		"t1": "Dragon",
-		"bs": {"hp": 61, "at": 84, "df": 65, "sa": 70, "sd": 70, "sp": 70},
-		"w": 16.5,
+	"Silvally-Ghost": {
+		"t1": "Ghost",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Dragonite": {
-		"t1": "Dragon",
-		"t2": "Flying",
-		"bs": {"hp": 91, "at": 134, "df": 95, "sa": 100, "sd": 100, "sp": 80},
-		"w": 210.0,
+	"Silvally-Grass": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Mewtwo": {
+	"Silvally-Ground": {
+		"t1": "Ground",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Ice": {
+		"t1": "Ice",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Poison": {
+		"t1": "Poison",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Psychic": {
 		"t1": "Psychic",
-		"gender": "genderless",
-		"bs": {"hp": 106, "at": 110, "df": 90, "sa": 154, "sd": 90, "sp": 130},
-		"w": 122.0,
-		"formes": ["Mewtwo", "Mewtwo-Mega-X", "Mewtwo-Mega-Y"],
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
 	},
-	"Mewtwo-Mega-X": {
-		"isAlternateForme": true,
+	"Silvally-Rock": {
+		"t1": "Rock",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Steel": {
+		"t1": "Steel",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Silvally-Water": {
+		"t1": "Water",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 95
+		},
+		"w": 100.5,
+		"ab": "RKS System",
+		"gender": "genderless"
+	},
+	"Solgaleo": {
 		"t1": "Psychic",
+		"t2": "Steel",
+		"bs": {
+			"hp": 137,
+			"at": 137,
+			"df": 107,
+			"sa": 113,
+			"sd": 89,
+			"sp": 97
+		},
+		"w": 230.0,
+		"ab": "Full Metal Body",
+		"gender": "genderless"
+	},
+	"Stakataka": {
+		"t1": "Rock",
+		"t2": "Steel",
+		"bs": {
+			"hp": 61,
+			"at": 131,
+			"df": 211,
+			"sa": 53,
+			"sd": 101,
+			"sp": 13
+		},
+		"w": 820.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Steenee": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 52,
+			"at": 40,
+			"df": 48,
+			"sa": 40,
+			"sd": 48,
+			"sp": 62
+		},
+		"w": 8.2,
+		"canEvolve": true
+	},
+	"Stufful": {
+		"t1": "Normal",
 		"t2": "Fighting",
-		"gender": "genderless",
-		"bs": {"hp": 106, "at": 190, "df": 100, "sa": 154, "sd": 100, "sp": 130},
-		"w": 127.0,
+		"bs": {
+			"hp": 70,
+			"at": 75,
+			"df": 50,
+			"sa": 45,
+			"sd": 50,
+			"sp": 50
+		},
+		"w": 6.8,
+		"ab": "Fluffy",
+		"canEvolve": true
 	},
-	"Mewtwo-Mega-Y": {
+	"Tapu Bulu": {
+		"t1": "Grass",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 70,
+			"at": 130,
+			"df": 115,
+			"sa": 85,
+			"sd": 95,
+			"sp": 75
+		},
+		"w": 45.5,
+		"ab": "Grassy Surge",
+		"gender": "genderless"
+	},
+	"Tapu Fini": {
+		"t1": "Water",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 70,
+			"at": 75,
+			"df": 115,
+			"sa": 95,
+			"sd": 130,
+			"sp": 85
+		},
+		"w": 21.2,
+		"ab": "Misty Surge",
+		"gender": "genderless"
+	},
+	"Tapu Koko": {
+		"t1": "Electric",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 70,
+			"at": 115,
+			"df": 85,
+			"sa": 95,
+			"sd": 75,
+			"sp": 130
+		},
+		"w": 20.5,
+		"ab": "Electric Surge",
+		"gender": "genderless"
+	},
+	"Tapu Lele": {
+		"t1": "Psychic",
+		"t2": "Fairy",
+		"bs": {
+			"hp": 70,
+			"at": 85,
+			"df": 75,
+			"sa": 130,
+			"sd": 115,
+			"sp": 95
+		},
+		"w": 18.6,
+		"ab": "Psychic Surge",
+		"gender": "genderless"
+	},
+	"Togedemaru": {
+		"t1": "Electric",
+		"t2": "Steel",
+		"bs": {
+			"hp": 65,
+			"at": 98,
+			"df": 63,
+			"sa": 40,
+			"sd": 73,
+			"sp": 96
+		},
+		"w": 3.3,
+		"ab": "Lightning Rod",
+		"formes": ["Togedemaru", "Togedemaru-Totem"]
+	},
+	"Togedemaru-Totem": {
+		"t1": "Electric",
+		"t2": "Steel",
+		"bs": {
+			"hp": 65,
+			"at": 98,
+			"df": 63,
+			"sa": 40,
+			"sd": 73,
+			"sp": 96
+		},
+		"w": 13.0,
+		"ab": "Sturdy",
+		"isAlternateForme": true
+	},
+	"Torracat": {
+		"t1": "Fire",
+		"bs": {
+			"hp": 65,
+			"at": 85,
+			"df": 50,
+			"sa": 80,
+			"sd": 50,
+			"sp": 90
+		},
+		"w": 25.0,
+		"canEvolve": true
+	},
+	"Toucannon": {
+		"t1": "Normal",
+		"t2": "Flying",
+		"bs": {
+			"hp": 80,
+			"at": 120,
+			"df": 75,
+			"sa": 75,
+			"sd": 75,
+			"sp": 60
+		},
+		"w": 26.0
+	},
+	"Toxapex": {
+		"t1": "Poison",
+		"t2": "Water",
+		"bs": {
+			"hp": 50,
+			"at": 63,
+			"df": 152,
+			"sa": 53,
+			"sd": 142,
+			"sp": 35
+		},
+		"w": 14.5,
+	},
+	"Trumbeak": {
+		"t1": "Normal",
+		"t2": "Flying",
+		"bs": {
+			"hp": 55,
+			"at": 85,
+			"df": 50,
+			"sa": 40,
+			"sd": 50,
+			"sp": 75
+		},
+		"w": 14.8,
+		"canEvolve": true
+	},
+	"Tsareena": {
+		"t1": "Grass",
+		"bs": {
+			"hp": 72,
+			"at": 120,
+			"df": 98,
+			"sa": 50,
+			"sd": 98,
+			"sp": 72
+		},
+		"w": 47.2,
+		"ab": "Queenly Majesty"
+	},
+	"Turtonator": {
+		"t1": "Fire",
+		"t2": "Dragon",
+		"bs": {
+			"hp": 60,
+			"at": 78,
+			"df": 135,
+			"sa": 91,
+			"sd": 85,
+			"sp": 36
+		},
+		"w": 212.0,
+		"ab": "Shell Armor"
+	},
+	"Type: Null": {
+		"t1": "Normal",
+		"bs": {
+			"hp": 95,
+			"at": 95,
+			"df": 95,
+			"sa": 95,
+			"sd": 95,
+			"sp": 59
+		},
+		"w": 120.5,
+		"ab": "Battle Armor",
+		"canEvolve": true,
+		"gender": "genderless"
+	},
+	"Vikavolt": {
+		"t1": "Bug",
+		"t2": "Electric",
+		"bs": {
+			"hp": 77,
+			"at": 70,
+			"df": 90,
+			"sa": 145,
+			"sd": 75,
+			"sp": 43
+		},
+		"w": 45.0,
+		"ab": "Levitate",
+		"formes": ["Vikavolt", "Vikavolt-Totem"]
+	},
+	"Vikavolt-Totem": {
+		"t1": "Bug",
+		"t2": "Electric",
+		"bs": {
+			"hp": 77,
+			"at": 70,
+			"df": 90,
+			"sa": 145,
+			"sd": 75,
+			"sp": 43
+		},
+		"w": 147.5,
+		"ab": "Levitate",
+		"isAlternateForme": true
+	},
+	"Vulpix-Alola": {
+		"t1": "Ice",
+		"bs": {
+			"hp": 38,
+			"at": 41,
+			"df": 40,
+			"sa": 50,
+			"sd": 65,
+			"sp": 65
+		},
+		"w": 9.9,
 		"isAlternateForme": true,
-		"t1": "Psychic",
-		"gender": "genderless",
-		"bs": {"hp": 106, "at": 150, "df": 70, "sa": 194, "sd": 120, "sp": 140},
-		"w": 33.0,
+		"canEvolve": true
 	},
-	"Mew": {
-		"t1": "Psychic",
-		"gender": "genderless",
-		"bs": {"hp": 100, "at": 100, "df": 100, "sa": 100, "sd": 100, "sp": 100},
-		"w": 4,
+	"Wimpod": {
+		"t1": "Bug",
+		"t2": "Water",
+		"bs": {
+			"hp": 25,
+			"at": 35,
+			"df": 40,
+			"sa": 20,
+			"sd": 30,
+			"sp": 80
+		},
+		"w": 12.0,
+		"ab": "Wimp Out"
 	},
-    "Meltan": {
-		"t1": "Steel",
-		"bs": { "hp": 46, "at": 65, "df": 65, "sa": 55, "sd": 35, "sp": 34},
+	"Wishiwashi": {
+		"t1": "Water",
+		"bs": {
+			"hp": 45,
+			"at": 140,
+			"df": 130,
+			"sa": 140,
+			"sd": 135,
+			"sp": 30
+		},
+		"w": 0.3,
+		"formes": ["Wishiwashi", "Wishiwashi-School"]
+	},
+	"Wishiwashi-School": {
+		"t1": "Water",
+		"bs": {
+			"hp": 45,
+			"at": 140,
+			"df": 130,
+			"sa": 140,
+			"sd": 135,
+			"sp": 30
+		},
+		"w": 78.6,
+		"isAlternateForme": true
+	},
+	"Xurkitree": {
+		"t1": "Electric",
+		"bs": {
+			"hp": 83,
+			"at": 89,
+			"df": 71,
+			"sa": 173,
+			"sd": 71,
+			"sp": 83
+		},
+		"w": 100.0,
+		"ab": "Beast Boost",
+		"gender": "genderless"
+	},
+	"Yungoos": {
+		"t1": "Normal",
+		"bs": {
+			"hp": 48,
+			"at": 70,
+			"df": 30,
+			"sa": 30,
+			"sd": 30,
+			"sp": 45
+		},
 		"w": 6.0,
-        "canEvolve": true
+		"canEvolve": true
 	},
-    "Melmetal": {
-		"t1": "Steel",
-		"bs": {"hp": 135, "at": 143, "df": 143, "sa": 80, "sd": 65, "sp": 34},
-		"w": 6.0,
+	"Zeraora": {
+		"t1": "Electric",
+		"bs": {
+			"hp": 88,
+			"at": 112,
+			"df": 75,
+			"sa": 102,
+			"sd": 80,
+			"sp": 143
+		},
+		"w": 44.5,
+		"ab": "Volt Absorb"
 	},
-};
+	"Zygarde-10%": {
+		"t1": "Dragon",
+		"t2": "Ground",
+		"bs": {
+			"hp": 54,
+			"at": 100,
+			"df": 71,
+			"sa": 61,
+			"sd": 85,
+			"sp": 115
+		},
+		"w": 33.5,
+		"ab": "Power Construct",
+		"isAlternateForme": true,
+		"gender": "genderless"
+	},
+	"Zygarde-Complete": {
+		"t1": "Dragon",
+		"t2": "Ground",
+		"bs": {
+			"hp": 216,
+			"at": 100,
+			"df": 121,
+			"sa": 91,
+			"sd": 95,
+			"sp": 85
+		},
+		"w": 610.0,
+		"ab": "Power Construct",
+		"isAlternateForme": true,
+		"gender": "genderless"
+	}
+});
 
 var POKEDEX_LG = $.extend(true, {}, POKEDEX_SM, {
     "Pikachu-Starter": {
