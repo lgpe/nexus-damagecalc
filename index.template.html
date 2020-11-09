@@ -36,8 +36,7 @@
             <input class="gen visually-hidden" type="radio" name="gen" value="4" id="gen4" /><label class="btn btn-small btn-mid" for="gen4">DPP</label>
             <input class="gen visually-hidden" type="radio" name="gen" value="5" id="gen5" /><label class="btn btn-small btn-mid" for="gen5">B/W</label>
             <input class="gen visually-hidden" type="radio" name="gen" value="6" id="gen6" /><label class="btn btn-small btn-mid" for="gen6">X/Y</label>
-			   <input class="gen visually-hidden" type="radio" name="gen" value="8" id="gen8" /><label class="btn btn-small btn-mid" for="gen8">LG</label>
-            <input class="gen visually-hidden" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn-small btn-right" for="gen7">S/M</label>
+            <input class="gen visually-hidden" type="radio" name="gen" value="7" id="gen7" checked="checked" /><label class="btn btn-small btn-right" for="gen7">LGPE</label>
         </span>
         <span aria-labelledby="selectNotationInstruction" role="radiogroup" title="Select the output notation.">
             <span class="visually-hidden" id="selectNotationInstruction">Select the output notation.</span>
@@ -58,22 +57,22 @@
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveL1" checked="checked" aria-describedby="resultDamageL1" />
-                <label class="btn btn-xxxwide btn-top" for="resultMoveL1">Hi Jump Kick</label>
+                <label class="btn btn-xxxwide btn-top" for="resultMoveL1">Floaty Fall</label>
                 <span id="resultDamageL1">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveL2" aria-describedby="resultDamageL2" />
-                <label class="btn btn-xxxwide btn-mid" for="resultMoveL2">Falcon Punch</label>
+                <label class="btn btn-xxxwide btn-mid" for="resultMoveL2">Splishy Splash</label>
                 <span id="resultDamageL2">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveL3" aria-describedby="resultDamageL3" />
-                <label class="btn btn-xxxwide btn-mid" for="resultMoveL3">Suspicious Odor</label>
+                <label class="btn btn-xxxwide btn-mid" for="resultMoveL3">Freezy Frost</label>
                 <span id="resultDamageL3">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveL4" aria-describedby="resultDamageL4" />
-                <label class="btn btn-xxxwide btn-bottom" for="resultMoveL4">Tombstoner</label>
+                <label class="btn btn-xxxwide btn-bottom" for="resultMoveL4">Sparkly Swirl</label>
                 <span id="resultDamageL4">??? - ???%</span>
             </div>
         </div>
@@ -82,22 +81,22 @@
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveR1" aria-describedby="resultDamageR1" />
-                <label class="btn btn-xxxwide btn-top" for="resultMoveR1">???</label>
+                <label class="btn btn-xxxwide btn-top" for="resultMoveR1">Floaty Fall</label>
                 <span id="resultDamageR1">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveR2" aria-describedby="resultDamageR2" />
-                <label class="btn btn-xxxwide btn-mid" for="resultMoveR2">Falcon Punch</label>
+                <label class="btn btn-xxxwide btn-mid" for="resultMoveR2">Splishy Splash</label>
                 <span id="resultDamageR2">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveR3" aria-describedby="resultDamageR3" />
-                <label class="btn btn-xxxwide btn-mid" for="resultMoveR3">Suspicious Odor</label>
+                <label class="btn btn-xxxwide btn-mid" for="resultMoveR3">Freezy Frost</label>
                 <span id="resultDamageR3">??? - ???%</span>
             </div>
             <div>
                 <input class="result-move visually-hidden" type="radio" name="resultMove" id="resultMoveR4" aria-describedby="resultDamageR4" />
-                <label class="btn btn-xxxwide btn-bottom" for="resultMoveR4">Tombstoner</label>
+                <label class="btn btn-xxxwide btn-bottom" for="resultMoveR4">Sparkly Swirl</label>
                 <span id="resultDamageR4">??? - ???%</span>
             </div>
         </div>
@@ -133,7 +132,7 @@
                 </div>
                 <div>
                     <label for="levelL1">Level</label>
-                    <input class="level calc-trigger" id="levelL1" value="50" />
+                    <input class="level calc-trigger" id="levelL1" value="100" />
                 </div>
                 <div class="hide">
                     <label for="weightL1">Weight (kg)</label>
@@ -146,9 +145,9 @@
                         <tr>
                             <th></th>
                             <th scope="col">Base</th>
-                            <th>IVs</th>
-                            <th>EVs</th>
-                            <th>DVs</th>
+                            <th class="gen-specific g3 g4 g5 g6 g7" scope="col">IVs</th>
+                            <th class="gen-specific g3 g4 g5 g6 g7" scope="col">AVs</th>
+                            <th class="gen-specific g1 g2 hide" scope="col">DVs</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -161,13 +160,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
                             </td>
                             <td><span class="total">341</span>
@@ -181,13 +180,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -217,13 +216,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -246,20 +245,20 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8">
+                        <tr class="sa gen-specific g2 g3 g4 g5 g6 g7">
                             <th scope="row">
                                 <label>Sp. Atk</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -282,20 +281,20 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8">
+                        <tr class="sd gen-specific g2 g3 g4 g5 g6 g7">
                             <th scope="row">
                                 <label>Sp. Def</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                              <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
                             </td>
                             <td><span class="total">236</span>
@@ -355,13 +354,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -388,7 +387,7 @@
                 </table>
             </div>
             <div class="info-group info-selectors">
-                <div>
+                <div class="gen-specific g3 g4 g5 g6 g7">
                     <label for="natureL1">Nature</label>
                     <select class="nature calc-trigger" id="natureL1">
                         <option value="Adamant">Adamant (+Atk, -SpA)</option>
@@ -418,11 +417,11 @@
                         <option value="Timid">Timid (+Spe, -Atk)</option>
                     </select>
                 </div>
-                <div>
+                <div class="gen-specific g3 g4 g5 g6 g7">
                     <label for="abilityL1">Ability</label>
                     <select class="ability terrain-trigger calc-trigger" id="abilityL1"></select>
                 </div>
-                <div>
+                <div class="gen-specific g2 g3 g4 g5 g6 g7">
                     <label for="itemL1">Item</label>
                     <select class="item terrain-trigger calc-trigger" id="itemL1"></select>
                 </div>
@@ -470,14 +469,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL1" />
                 <label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL1"/>
-                <label class="btn z-btn gen-specific g7 g8" for="zL1" title="Make this attack a Z-move?">Z</label>
+                <label class="btn z-btn gen-specific g6" for="zL1" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -503,14 +502,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL2" />
                 <label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL2"/>
-                <label class="btn z-btn gen-specific g7 g8" for="zL2" title="Make this attack a Z-move?">Z</label>
+                <label class="btn z-btn gen-specific g6" for="zL2" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -536,14 +535,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL3" />
                 <label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL3"/>
-                <label class="btn z-btn gen-specific g7 g8" for="zL3" title="Make this attack a Z-move?">Z</label>
+                <label class="btn z-btn gen-specific g6" for="zL3" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -569,14 +568,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL4" />
                 <label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
                 <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zL4"/>
-                <label class="btn z-btn gen-specific g7 g8" for="zL4" title="Make this attack a Z-move?">Z</label>
+                <label class="btn z-btn gen-specific g6" for="zL4" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -605,24 +604,24 @@
         <div aria-label="Field information" role="region">
             <fieldset class="field-info">
                 <legend align="center">Field</legend>
-                <div aria-labelledby="selectBattleFormatInstruction">
+                <div aria-labelledby="selectBattleFormatInstruction" class="gen-specific g3 g4 g5 g6 g7" role="radiogroup" style="width: 10.6em; margin: 0 auto 5px;" title="Select the battle format.">
                     <span class="visually-hidden" id="selectBattleFormatInstruction">Select the battle format.</span>
                     <input class="visually-hidden calc-trigger" type="radio" name="format" value="Singles" id="singles-format" checked="checked" />
                     <label class="btn btn-left" for="singles-format">Singles</label>
                     <input class="visually-hidden calc-trigger" type="radio" name="format" value="Doubles" id="doubles-format" />
                     <label class="btn btn-right" for="doubles-format">Doubles</label>
                 </div>
-                <div aria-labelledby="selectTerrainInstruction">
+                <div aria-labelledby="selectTerrainInstruction" class="gen-specific g6 g7" role="group" title="Select the current terrain.">
                     <span class="visually-hidden" id="selectTerrainInstruction">Select the current terrain.</span>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Electric" id="electric" /><label class="btn btn-xxxwide btn-left" for="electric">Electric Terrain</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Grassy" id="grassy" /><label class="btn btn-xxxwide btn-mid" for="grassy">Grassy Terrain</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Misty" id="misty" /><label class="btn btn-xxxwide btn-right" for="misty">Misty Terrain</label>
                     <input class="visually-hidden terrain-trigger calc-trigger" type="checkbox" name="terrain" value="Psychic" id="psychic" /><label class="btn btn-xxxwide btn-mid" for="psychic">Psychic Terrain</label>
                 </div>
-                <hr />
+                <hr class="gen-specific g6 g7" />
                 <div aria-labelledby="selectWeatherInstruction" role="radiogroup">
                     <span class="visually-hidden" id="selectWeatherInstruction">Select the current weather condition.</span>
-                    <div >
+                    <div  class="gen-specific g3 g4 g5 g6 g7" style="width: 22.2em; margin: 5px auto;" title="Select the current weather condition.">
                         <input class="visually-hidden calc-trigger" type="radio" name="weather" value="" id="clear" checked="checked" />
                         <label class="btn btn-small btn-left" for="clear">None</label>
                         <input class="visually-hidden calc-trigger" type="radio" name="weather" value="Sun" id="sun" />
@@ -634,7 +633,7 @@
                         <input class="visually-hidden calc-trigger" type="radio" name="weather" value="Hail" id="hail" />
                         <label class="btn btn-small btn-right" for="hail">Hail</label>
                     </div>
-                    <div>
+                    <div class="gen-specific g6 g7" title="Select the current weather condition.">
                         <input class="visually-hidden calc-trigger" type="radio" name="weather" value="Harsh Sunshine" id="harsh-sunshine" />
                         <label class="btn btn-xxxwide btn-left" for="harsh-sunshine">Harsh Sunshine</label>
                         <input class="visually-hidden calc-trigger" type="radio" name="weather" value="Heavy Rain" id="heavy-rain" />
@@ -643,7 +642,7 @@
                         <label class="btn btn-xxxwide btn-right" for="strong-winds">Strong Winds</label>
                     </div>
                   </div>
-                <div aria-labelledby="selectGscWeatherInstruction">
+                <div aria-labelledby="selectGscWeatherInstruction" class="gen-specific g2 hide" role="radiogroup" style="width: 17.8em; margin: 0 auto 5px;" title="Select the current weather condition.">
                     <span class="visually-hidden" id="selectGscWeatherInstruction">Select the current weather condition.</span>
                     <input class="visually-hidden calc-trigger" type="radio" name="gscWeather" value="" id="gscClear" checked="checked" />
                     <label class="btn btn-small btn-left" for="gscClear">None</label>
@@ -654,12 +653,12 @@
                     <input class="visually-hidden calc-trigger" type="radio" name="gscWeather" value="Sand" id="gscSand" />
                     <label class="btn btn-small btn-right" for="gscSand">Sand</label>
                 </div>
-                <div>
+                <div class="gen-specific g4 g5 g6 g7" style="width: 5.3em; margin: 5px auto;" title="Is gravity in effect?">
                     <span hidden id="gravityInstruction">Is gravity in effect?</span>
                     <input aria-describedby="gravityInstruction" class="visually-hidden calc-trigger" type="checkbox" id="gravity" />
                     <label class="btn" for="gravity">Gravity</label>
                 </div>
-                <hr />
+                <hr class="gen-specific g2 g3 g4 g5 g6 g7" />
                 <table>
                     <thead>
                         <tr>
@@ -668,7 +667,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="gen-specific g4 g5 g6 g7">
                             <div hidden id="selectStealthRockInstruction">Is Stealth Rock affecting this side of the field?</div>
                             <td><div class="left" title="Is Stealth Rock affecting this side of the field?">
                                 <input aria-describedby="selectStealthRockInstruction" class="visually-hidden calc-trigger" type="checkbox" id="srL" />
@@ -679,7 +678,7 @@
                                 <label class="btn btn-xwide" for="srR">Stealth Rock</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g3 g4 g5 g6 g7">
                             <div hidden id="selectSpikeInstruction">Are there Spikes on this side of the field?</div>
                             <td><div aria-labelledby="selectSpikeInstruction" class="left" role="radiogroup" title="Are there Spikes on this side of the field?">
                                 <input class="visually-hidden calc-trigger" type="radio" name="spikesL" value="0" id="spikesL0" checked="checked" />
@@ -702,7 +701,7 @@
                                 <label class="btn btn-wide btn-right" for="spikesR3">3 Spikes</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g2">
                             <td><div class="left" title="Are there Spikes on this side of the field?">
                                 <input aria-describedby="selectSpikeInstruction" class="visually-hidden calc-trigger" type="checkbox" id="gscSpikesL" />
                                 <label class="btn" for="gscSpikesL">Spikes</label>
@@ -727,7 +726,7 @@
                                 <label class="btn btn-xwide btn-right" for="lightScreenR">Light Screen</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g2 g3 g4 g5 g6 g7">
                             <td><div class="left" title="Is this Pok&eacute;mon protected?">
                                 <div hidden id="selectProtectInstruction">Is this Pok&eacute;mon protected?</div>
                                 <input aria-describedby="selectProtectInstruction" class="visually-hidden calc-trigger" type="checkbox" id="protectL" />
@@ -749,7 +748,7 @@
                                 <label class="btn btn-wide" for="leechSeedR">Leech Seed</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g2 g3 g4 g5 g6 g7">
                             <td><div class="left" title="Has this Pok&eacute;mon been revealed with Foresight or Odor Sleuth?">
                                 <div hidden id="selectRevealInstruction">Has this Pok&eacute;mon been revealed with Foresight or Odor Sleuth?</div>
                                 <input aria-describedby="selectRevealInstruction" class="visually-hidden calc-trigger" type="checkbox" id="foresightL" />
@@ -760,7 +759,7 @@
                                 <label class="btn btn-wide" for="foresightR">Foresight</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g3 g4 g5 g6 g7">
                             <td><div class="left" title="Has this Pok&eacute;mon's power been boosted by an ally's Helping Hand?">
                                 <div hidden id="selectHelpingHandInstruction">Has this Pok&eacute;mon's power been boosted by an ally's Helping Hand?</div>
                                 <input aria-describedby="selectHelpingHandInstruction" class="visually-hidden calc-trigger" type="checkbox" id="helpingHandL" />
@@ -771,7 +770,7 @@
                                 <label class="btn btn-xxwide" for="helpingHandR">Helping Hand</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g5 g6 g7">
                             <td><div class="left" title="Is the Pok&eacute;mon protected by an ally's Friend Guard?">
                                 <div hidden id="selectFriendGuardInstruction">Is the Pok&eacute;mon protected by an ally's Friend Guard?</div>
                                 <input aria-describedby="selectFriendGuardInstruction" class="visually-hidden calc-trigger" type="checkbox" id="friendGuardL" />
@@ -782,7 +781,7 @@
                                 <label class="btn btn-xxwide" for="friendGuardR">Friend Guard</label>
                             </div></td>
                         </tr>
-                        <tr>
+                        <tr class="gen-specific g7">
                             <td><div class="left" title="Is the Pok&eacute;mon protected by an ally's Aurora Veil?">
                                 <div hidden id="selectAuroraVeilInstruction">Is the Pok&eacute;mon protected by an ally's Aurora Veil?</div>
                                 <input aria-describedby="selectAuroraVeilInstruction" class="visually-hidden calc-trigger" type="checkbox" id="auroraVeilL" />
@@ -793,7 +792,7 @@
                                 <label class="btn btn-xxwide" for="auroraVeilR">Aurora Veil</label>
                             </div></td>
                         </tr>
-				        <tr>
+				        <tr class="gen-specific g7">
                             <td><div class="left" title="Has the Pok&eacute;mon boosted all its stats one stage?">
 										  <div hidden id="selectStatBoostInstruction">Has the Pok&eacute;mon boosted all its stats one stage?</div>
                                 <input aria-describedby="selectStatBoostInstruction" class="visually-hidden calc-trigger" type="checkbox" id="StatBoostL" />
@@ -865,9 +864,9 @@
                         <tr>
                             <th></th>
                             <th scope="col">Base</th>
-                            <th>IVs</th>
-                            <th>EVs</th>
-                            <th>DVs</th>
+                            <th class="gen-specific g3 g4 g5 g6 g7" scope="col">IVs</th>
+                            <th class="gen-specific g3 g4 g5 g6 g7" scope="col">EVs</th>
+                            <th class="gen-specific g1 g2 hide" scope="col">DVs</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -880,13 +879,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
                             </td>
                             <td><span class="total">341</span>
@@ -900,13 +899,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -936,13 +935,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -965,20 +964,20 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8">
+                        <tr class="sa gen-specific g2 g3 g4 g5 g6 g7">
                             <th scope="row">
                                 <label>Sp. Atk</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -1001,20 +1000,20 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8">
+                        <tr class="sd gen-specific g2 g3 g4 g5 g6 g7">
                             <th scope="row">
                                 <label>Sp. Def</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" disabled="disabled" />
                             </td>
                             <td><span class="total">236</span>
@@ -1074,13 +1073,13 @@
                             <td>
                                 <input class="base calc-trigger" value="100" />
                             </td>
-                            <td>
+                            <td class="gen-specific g3 g4 g5 g6 g7">
                                 <input class="ivs calc-trigger" value="31" />
                             </td>
-                            <td>
-                                <input class="evs calc-trigger" type="number" min="0" max="252" step="4" value="0" />
+                            <td class="gen-specific g3 g4 g5 g6 g7">
+                                <input class="evs calc-trigger" type="number" min="0" max="200" step="1" value="0" />
                             </td>
-                            <td>
+                            <td class="gen-specific g1 g2 hide">
                                 <input class="dvs calc-trigger" value="15" />
                             </td>
                             <td><span class="total">236</span>
@@ -1107,7 +1106,7 @@
                 </table>
             </div>
             <div class="info-group info-selectors">
-                <div>
+                <div class="gen-specific g3 g4 g5 g6 g7">
                     <label for="natureR1">Nature</label>
                     <select class="nature calc-trigger" id="natureR1">
                         <option value="Adamant">Adamant (+Atk, -SpA)</option>
@@ -1136,6 +1135,14 @@
                         <option value="Serious">Serious</option>
                         <option value="Timid">Timid (+Spe, -Atk)</option>
                     </select>
+                </div>
+                <div class="gen-specific g3 g4 g5 g6 g7 hide">
+                    <label for="abilityR1">Ability</label>
+                    <select class="ability terrain-trigger calc-trigger" id="abilityR1"></select>
+                </div>
+                <div class="gen-specific g2 g3 g4 g5 g6 g7 hide">
+                    <label for="itemR1">Item</label>
+                    <select class="item terrain-trigger calc-trigger" id="itemR1"></select>
                 </div>
                 <div>
                     <label for="statusR1">Status</label>
@@ -1179,12 +1186,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR1" />
                 <label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
+                <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR1"/>
+                <label class="btn z-btn gen-specific g7" for="zR1" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -1192,6 +1201,13 @@
                     <option value="5">5 hits</option>
                 </select>
                 <select class="stat-drops calc-trigger hide" title="How many times was this move used in a row?">>
+                    <option value="1">Once</option>
+                    <option value="2">Twice</option>
+                    <option value="3">3 times</option>
+                    <option value="4">4 times</option>
+                    <option value="5">5 times</option>
+                </select>
+                <select class="metronome calc-trigger hide" title="How many times was this move used while holding Metronome?">
                     <option value="1">Once</option>
                     <option value="2">Twice</option>
                     <option value="3">3 times</option>
@@ -1203,12 +1219,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR2" />
                 <label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
+                <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR2"/>
+                <label class="btn z-btn gen-specific g7" for="zR2" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -1216,6 +1234,13 @@
                     <option value="5">5 hits</option>
                 </select>
                 <select class="stat-drops calc-trigger hide" title="How many times was this move used in a row?">>
+                    <option value="1">Once</option>
+                    <option value="2">Twice</option>
+                    <option value="3">3 times</option>
+                    <option value="4">4 times</option>
+                    <option value="5">5 times</option>
+                </select>
+                <select class="metronome calc-trigger hide" title="How many times was this move used while holding Metronome?">
                     <option value="1">Once</option>
                     <option value="2">Twice</option>
                     <option value="3">3 times</option>
@@ -1227,12 +1252,14 @@
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR3" />
                 <label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
+                <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR3"/>
+                <label class="btn z-btn gen-specific g7" for="zR3" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -1246,17 +1273,26 @@
                     <option value="4">4 times</option>
                     <option value="5">5 times</option>
                 </select>
+                <select class="metronome calc-trigger hide" title="How many times was this move used while holding Metronome?">
+                    <option value="1">Once</option>
+                    <option value="2">Twice</option>
+                    <option value="3">3 times</option>
+                    <option value="4">4 times</option>
+                    <option value="5">5 times</option>
+                </select>
             </div>
             <div class="move4">
                 <select class="move-selector calc-trigger small-select"></select>
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
-                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8">
+                <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7">
                     <option value="Physical">Physical</option>
                     <option value="Special">Special</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR4" />
                 <label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
+                <input aria-describedby="zMoveInstruction" class="move-z calc-trigger visually-hidden" type="checkbox" id="zR4"/>
+                <label class="btn z-btn gen-specific g7" for="zR4" title="Make this attack a Z-move?">Z</label>
                 <select class="move-hits calc-trigger hide">
                     <option value="2">2 hits</option>
                     <option value="3">3 hits</option>
@@ -1264,6 +1300,13 @@
                     <option value="5">5 hits</option>
                 </select>
                 <select class="stat-drops calc-trigger hide" title="How many times was this move used in a row?">>
+                    <option value="1">Once</option>
+                    <option value="2">Twice</option>
+                    <option value="3">3 times</option>
+                    <option value="4">4 times</option>
+                    <option value="5">5 times</option>
+                </select>
+                <select class="metronome calc-trigger hide" title="How many times was this move used while holding Metronome?">
                     <option value="1">Once</option>
                     <option value="2">Twice</option>
                     <option value="3">3 times</option>
@@ -1304,7 +1347,9 @@
     <script type="text/javascript" src="./js/moveset_import.js?"></script>
 </div>
 
-    <div style="clear:both;padding:20px;text-align:left"><p>Original calculator created by Honko</p>
+    <div style="clear:both;padding:20px;text-align:left"><p>Created by Honko</p>
+		<p><a href="https://github.com/Zarel/honko-damagecalc/contributors" target="_blank">Contributors</a></p>
+		<p><a href="https://github.com/Zarel/honko-damagecalc" target="_blank">GitHub repository</a></p>
 	</div>
 
 </body>
