@@ -1,4 +1,4 @@
-Honko Damage Calculator
+LGPE Damage Calculator
 =======================
 
 Damage Calculator for Let's Go cartridge battles.
